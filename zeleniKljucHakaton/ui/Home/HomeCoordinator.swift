@@ -40,4 +40,9 @@ final class HomeCoordinator: HomeCoordinating {
                                   mediaTypes: ["public.image"])
         return homeViewController
     }
+    
+    func continueToReport(navigation: UINavigationController) {
+        let reportCoordinator = ReportCoordinator(presenter: navigation, manager: manager)
+        reportCoordinator.start()
+    }
 }

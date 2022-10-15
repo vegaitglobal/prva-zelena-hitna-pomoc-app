@@ -28,6 +28,7 @@ final class HomeViewController: UIViewController, UITabBarControllerDelegate, UI
     }
     
     @IBAction func handleImageSelectTap(_ sender: Any) {
-        viewModel.presentImagePicker()
+//        viewModel.presentImagePicker()
+        viewModel.continueToReport()
     }
 }

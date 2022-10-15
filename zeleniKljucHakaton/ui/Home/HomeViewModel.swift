@@ -10,11 +10,12 @@ import UIKit
 protocol HomeViewDelegate {
     var viewDelegate: HomeViewControllerDelegating? { get set }
     func presentImagePicker()
+    func continueToReport()
 }
 
 final class HomeViewModel: HomeViewDelegate {
     weak var viewDelegate: HomeViewControllerDelegating?
-    private let coordinator: HomeCoordinator
+    private let coordinator: HomeCoordinator?
     var requestManager: RepositoryModule
 
     init (coordinator: HomeCoordinator, manager: RepositoryModule) {
@@ -23,7 +24,13 @@ final class HomeViewModel: HomeViewDelegate {
     }
     
     func presentImagePicker() {
-        coordinator.presentImagePicker()
+        coordinator?.presentImagePicker()
+    }
+    
+    func continueToReport() {
+        guard let viewController = viewDelegate as? HomeViewController,
+              let navigation = viewController.navigationController else { return }
+        coordinator?.continueToReport(navigation: navigation)
     }
 }
 
