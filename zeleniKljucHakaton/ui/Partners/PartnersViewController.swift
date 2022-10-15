@@ -25,6 +25,11 @@ class PartnersViewController: UIViewController {
         collectionView.register(UINib(nibName: "PartnersCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "Cell")
         collectionView.delegate = self
         collectionView.dataSource = self
+        NotificationCenter.default.addObserver(self, selector: #selector(getPartnersInfo), name: Notification.Name.partners, object: nil)
+    }
+    
+    @objc func getPartnersInfo(notification: NSNotification) {
+        viewModel.partnerScreenInfos = notification.object as? PartnersScreenModel
     }
     
     override func viewWillAppear(_ animated: Bool) {

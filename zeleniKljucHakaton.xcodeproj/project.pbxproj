@@ -330,7 +330,6 @@
 				7C8896C728F9EECA0031E5FB /* LaunchScreen.storyboard */,
 				7C8896EC28F9F1080031E5FB /* GoogleService-Info.plist */,
 				7C8896CA28F9EECA0031E5FB /* Info.plist */,
-				7C69836428FAE9B90037B44B /* CustomImageView.swift */,
 			);
 			path = zeleniKljucHakaton;
 			sourceTree = "<group>";
@@ -530,6 +529,7 @@
 		7C88973128FA9D140031E5FB /* libraries */ = {
 			isa = PBXGroup;
 			children = (
+				7C69836428FAE9B90037B44B /* CustomImageView.swift */,
 				532844CE28FAAAB0008695F3 /* Image Picker */,
 			);
 			path = libraries;
