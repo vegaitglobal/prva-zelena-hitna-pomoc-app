@@ -87,6 +87,6 @@ extension NewsViewController: UICollectionViewDelegate, UICollectionViewDataSour
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width: CGFloat = collectionView.frame.width
-        return .init(width: width, height:  300)
+        return .init(width: width, height:  340)
     }
 }

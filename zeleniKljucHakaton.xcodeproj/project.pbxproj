@@ -21,7 +21,6 @@
 		7C69833C28FAC6760037B44B /* PartnersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69833A28FAC6750037B44B /* PartnersCollectionViewCell.swift */; };
 		7C69833D28FAC6760037B44B /* PartnersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69833B28FAC6760037B44B /* PartnersCollectionViewCell.xib */; };
 		7C69833F28FAC6FB0037B44B /* DonationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69833E28FAC6FB0037B44B /* DonationsViewController.xib */; };
-		7C69834128FAD2930037B44B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69834028FAD2930037B44B /* HomeViewController.xib */; };
 		7C69834B28FAD59F0037B44B /* ReportViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69834A28FAD59F0037B44B /* ReportViewCoordinator.swift */; };
 		7C69834D28FAD5C70037B44B /* ReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69834C28FAD5C70037B44B /* ReportViewModel.swift */; };
 		7C69835E28FAD9FA0037B44B /* ReportProblemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69835C28FAD9FA0037B44B /* ReportProblemViewController.swift */; };
@@ -50,6 +49,8 @@
 		7C69839728FAF6940037B44B /* NewsDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69839528FAF6940037B44B /* NewsDetailsViewController.xib */; };
 		7C69839928FAF6AF0037B44B /* NewsDetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69839828FAF6AF0037B44B /* NewsDetailsCoordinator.swift */; };
 		7C69839B28FAF6BD0037B44B /* NewsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69839A28FAF6BD0037B44B /* NewsDetailsViewModel.swift */; };
+		7C69839F28FB279D0037B44B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69839D28FB279D0037B44B /* HomeViewController.swift */; };
+		7C6983A028FB279D0037B44B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69839E28FB279D0037B44B /* HomeViewController.xib */; };
 		7C8896BD28F9EECA0031E5FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8896BC28F9EECA0031E5FB /* AppDelegate.swift */; };
 		7C8896C428F9EECA0031E5FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8896C228F9EECA0031E5FB /* Main.storyboard */; };
 		7C8896C628F9EECA0031E5FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8896C528F9EECA0031E5FB /* Assets.xcassets */; };
@@ -58,7 +59,6 @@
 		7C8896DE28F9EECA0031E5FB /* zeleniKljucHakatonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8896DD28F9EECA0031E5FB /* zeleniKljucHakatonUITests.swift */; };
 		7C8896E028F9EECA0031E5FB /* zeleniKljucHakatonUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8896DF28F9EECA0031E5FB /* zeleniKljucHakatonUITestsLaunchTests.swift */; };
 		7C8896ED28F9F1080031E5FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C8896EC28F9F1080031E5FB /* GoogleService-Info.plist */; };
-		7C8896F428F9F32B0031E5FB /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8896F228F9F32B0031E5FB /* HomeViewController.swift */; };
 		7C8896F728F9F3430031E5FB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8896F628F9F3430031E5FB /* HomeViewModel.swift */; };
 		7C8896F928F9F35C0031E5FB /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8896F828F9F35C0031E5FB /* HomeCoordinator.swift */; };
 		7C8896FC28F9F5D00031E5FB /* TabBarViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8896FB28F9F5D00031E5FB /* TabBarViewControllerFactory.swift */; };
@@ -127,7 +127,6 @@
 		7C69833A28FAC6750037B44B /* PartnersCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartnersCollectionViewCell.swift; sourceTree = "<group>"; };
 		7C69833B28FAC6760037B44B /* PartnersCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PartnersCollectionViewCell.xib; sourceTree = "<group>"; };
 		7C69833E28FAC6FB0037B44B /* DonationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DonationsViewController.xib; sourceTree = "<group>"; };
-		7C69834028FAD2930037B44B /* HomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = HomeViewController.xib; path = /Users/teodorarandjelovic/Documents/XCODE/zeleniKljucHakaton/zeleniKljucHakaton/ui/Home/HomeViewController.xib; sourceTree = "<absolute>"; };
 		7C69834A28FAD59F0037B44B /* ReportViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewCoordinator.swift; sourceTree = "<group>"; };
 		7C69834C28FAD5C70037B44B /* ReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewModel.swift; sourceTree = "<group>"; };
 		7C69835C28FAD9FA0037B44B /* ReportProblemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportProblemViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +155,8 @@
 		7C69839528FAF6940037B44B /* NewsDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsDetailsViewController.xib; sourceTree = "<group>"; };
 		7C69839828FAF6AF0037B44B /* NewsDetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsCoordinator.swift; sourceTree = "<group>"; };
 		7C69839A28FAF6BD0037B44B /* NewsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewModel.swift; sourceTree = "<group>"; };
+		7C69839D28FB279D0037B44B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7C69839E28FB279D0037B44B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		7C8896B928F9EECA0031E5FB /* zeleniKljucHakaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zeleniKljucHakaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8896BC28F9EECA0031E5FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C8896C328F9EECA0031E5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -168,7 +169,6 @@
 		7C8896DD28F9EECA0031E5FB /* zeleniKljucHakatonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zeleniKljucHakatonUITests.swift; sourceTree = "<group>"; };
 		7C8896DF28F9EECA0031E5FB /* zeleniKljucHakatonUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zeleniKljucHakatonUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		7C8896EC28F9F1080031E5FB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		7C8896F228F9F32B0031E5FB /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7C8896F628F9F3430031E5FB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		7C8896F828F9F35C0031E5FB /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		7C8896FB28F9F5D00031E5FB /* TabBarViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewControllerFactory.swift; sourceTree = "<group>"; };
@@ -355,8 +355,8 @@
 		7C8896EE28F9F1BF0031E5FB /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				7C69834028FAD2930037B44B /* HomeViewController.xib */,
-				7C8896F228F9F32B0031E5FB /* HomeViewController.swift */,
+				7C69839E28FB279D0037B44B /* HomeViewController.xib */,
+				7C69839D28FB279D0037B44B /* HomeViewController.swift */,
 				7C8896F628F9F3430031E5FB /* HomeViewModel.swift */,
 				7C8896F828F9F35C0031E5FB /* HomeCoordinator.swift */,
 				7C69836028FAE7770037B44B /* HomeCollectionViewCell.swift */,
@@ -670,12 +670,12 @@
 				7C69833F28FAC6FB0037B44B /* DonationsViewController.xib in Resources */,
 				7C69835F28FAD9FA0037B44B /* ReportProblemViewController.xib in Resources */,
 				7C8896C628F9EECA0031E5FB /* Assets.xcassets in Resources */,
+				7C6983A028FB279D0037B44B /* HomeViewController.xib in Resources */,
 				7C69833D28FAC6760037B44B /* PartnersCollectionViewCell.xib in Resources */,
 				7C69839228FAF3020037B44B /* CategoriesInformationsTableViewCell.xib in Resources */,
 				7C8896C428F9EECA0031E5FB /* Main.storyboard in Resources */,
 				7C69833328FAC5290037B44B /* NewsViewController.xib in Resources */,
 				7C69836328FAE7770037B44B /* HomeCollectionViewCell.xib in Resources */,
-				7C69834128FAD2930037B44B /* HomeViewController.xib in Resources */,
 				7C69838A28FAF2770037B44B /* CategoriesInformationsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -776,6 +776,7 @@
 				7C69839128FAF3020037B44B /* CategoriesInformationsTableViewCell.swift in Sources */,
 				7C69834B28FAD59F0037B44B /* ReportViewCoordinator.swift in Sources */,
 				7C69836E28FAECAB0037B44B /* CategoriesViewModel.swift in Sources */,
+				7C69839F28FB279D0037B44B /* HomeViewController.swift in Sources */,
 				7C88973628FA9F300031E5FB /* DonationsViewModel.swift in Sources */,
 				7C88974628FAA0980031E5FB /* ContactScreenModel.swift in Sources */,
 				7C69836228FAE7770037B44B /* HomeCollectionViewCell.swift in Sources */,
@@ -788,7 +789,6 @@
 				7C88973028FA9BD60031E5FB /* FirebaseManager.swift in Sources */,
 				7C69836C28FAEC9D0037B44B /* CategoriesCoordinator.swift in Sources */,
 				7C8896FC28F9F5D00031E5FB /* TabBarViewControllerFactory.swift in Sources */,
-				7C8896F428F9F32B0031E5FB /* HomeViewController.swift in Sources */,
 				7C69835E28FAD9FA0037B44B /* ReportProblemViewController.swift in Sources */,
 				7C88973328FA9F1A0031E5FB /* DonationsCoordinator.swift in Sources */,
 				7C88972428FA9A9D0031E5FB /* DonationsProtocol.swift in Sources */,

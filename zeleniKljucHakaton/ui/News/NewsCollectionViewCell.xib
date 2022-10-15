@@ -29,7 +29,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bHi-xy-ogL" customClass="CachedImageView" customModule="zeleniKljucHakaton" customModuleProvider="target">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bHi-xy-ogL" customClass="CachedImageView" customModule="zeleniKljucHakaton" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="53" width="357" height="174"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <color key="tintColor" systemColor="systemGray4Color"/>

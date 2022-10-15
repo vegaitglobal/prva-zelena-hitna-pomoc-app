@@ -2,7 +2,7 @@
 //  HomeViewController.swift
 //  zeleniKljucHakaton
 //
-//  Created by Teodora Randjelovic on 10/14/22.
+//  Created by Teodora Randjelovic on 10/15/22.
 //
 
 import UIKit
@@ -100,3 +100,4 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
         return .init(width: width, height:  80)
     }
 }
+
