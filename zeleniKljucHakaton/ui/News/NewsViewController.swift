@@ -9,7 +9,7 @@ import UIKit
 protocol NewsViewControllerDelegating: AnyObject {
 }
 
-class NewsViewController: UIViewController {
+class NewsViewController: UIViewController, NewsViewControllerDelegating{
     var viewModel: NewsViewDelegate
     
     init(viewModel: NewsViewDelegate) {

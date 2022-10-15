@@ -11,11 +11,14 @@ protocol NewsViewDelegate {
     var viewDelegate: NewsViewControllerDelegating? { get set }
 }
 
-class NewsViewModel: NewsViewDelegate {
+final class NewsViewModel: NewsViewDelegate {
     private var coordinator: NewsCoordinator?
+    var viewDelegate: NewsViewControllerDelegating?
+    let requestManager: RepositoryModule
     
-    init (coordinator: NewsCoordinator) {
+    init (coordinator: NewsCoordinator, manager: RepositoryModule) {
         self.coordinator = coordinator
+        self.requestManager = manager
     }
 }
 

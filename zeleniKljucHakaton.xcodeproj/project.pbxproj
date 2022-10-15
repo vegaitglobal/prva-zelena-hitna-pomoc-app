@@ -31,6 +31,32 @@
 		7C88971128F9FC160031E5FB /* PartnersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C88970F28F9FC160031E5FB /* PartnersViewController.xib */; };
 		7C88971328F9FC2F0031E5FB /* PartnersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88971228F9FC2F0031E5FB /* PartnersViewModel.swift */; };
 		7C88971528F9FC3E0031E5FB /* PartnersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88971428F9FC3E0031E5FB /* PartnersCoordinator.swift */; };
+		7C88971728FA99CB0031E5FB /* RepositoryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88971628FA99CB0031E5FB /* RepositoryModule.swift */; };
+		7C88971C28FA9A330031E5FB /* RepositoryModuleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88971B28FA9A330031E5FB /* RepositoryModuleProtocol.swift */; };
+		7C88971E28FA9A640031E5FB /* CategoriesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88971D28FA9A640031E5FB /* CategoriesProtocol.swift */; };
+		7C88972028FA9A780031E5FB /* ProblemReportProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88971F28FA9A780031E5FB /* ProblemReportProtocol.swift */; };
+		7C88972228FA9A8B0031E5FB /* ContactDataProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88972128FA9A8B0031E5FB /* ContactDataProtocol.swift */; };
+		7C88972428FA9A9D0031E5FB /* DonationsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88972328FA9A9D0031E5FB /* DonationsProtocol.swift */; };
+		7C88972628FA9AAA0031E5FB /* NewsPorotocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88972528FA9AAA0031E5FB /* NewsPorotocol.swift */; };
+		7C88972828FA9AC70031E5FB /* PartnerDetailsProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88972728FA9AC70031E5FB /* PartnerDetailsProtocol.swift */; };
+		7C88972B28FA9B6E0031E5FB /* ProblemReportModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88972A28FA9B6E0031E5FB /* ProblemReportModel.swift */; };
+		7C88972D28FA9BBF0031E5FB /* ManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88972C28FA9BBF0031E5FB /* ManagerProtocol.swift */; };
+		7C88973028FA9BD60031E5FB /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88972F28FA9BD60031E5FB /* FirebaseManager.swift */; };
+		7C88973328FA9F1A0031E5FB /* DonationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88973228FA9F1A0031E5FB /* DonationsCoordinator.swift */; };
+		7C88973628FA9F300031E5FB /* DonationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88973528FA9F2F0031E5FB /* DonationsViewModel.swift */; };
+		7C88973928FA9F4E0031E5FB /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88973728FA9F4E0031E5FB /* DonationsViewController.swift */; };
+		7C88973A28FA9F4E0031E5FB /* DonationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C88973828FA9F4E0031E5FB /* DonationsViewController.xib */; };
+		7C88973D28FA9F700031E5FB /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88973B28FA9F700031E5FB /* ContactViewController.swift */; };
+		7C88973E28FA9F700031E5FB /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C88973C28FA9F700031E5FB /* ContactViewController.xib */; };
+		7C88974028FA9F840031E5FB /* ContactCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88973F28FA9F840031E5FB /* ContactCoordinator.swift */; };
+		7C88974228FA9F930031E5FB /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88974128FA9F930031E5FB /* ContactViewModel.swift */; };
+		7C88974428FAA0840031E5FB /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88974328FAA0840031E5FB /* CategoryModel.swift */; };
+		7C88974628FAA0980031E5FB /* ContactScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88974528FAA0980031E5FB /* ContactScreenModel.swift */; };
+		7C88974828FAA0AD0031E5FB /* DonationsScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88974728FAA0AD0031E5FB /* DonationsScreenModel.swift */; };
+		7C88974A28FAA0B80031E5FB /* Link.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88974928FAA0B80031E5FB /* Link.swift */; };
+		7C88974C28FAA0C90031E5FB /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88974B28FAA0C90031E5FB /* News.swift */; };
+		7C88974E28FAA0DC0031E5FB /* Partner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88974D28FAA0DC0031E5FB /* Partner.swift */; };
+		7C88975028FAA0EA0031E5FB /* PartnersScreenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88974F28FAA0EA0031E5FB /* PartnersScreenModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +106,32 @@
 		7C88970F28F9FC160031E5FB /* PartnersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartnersViewController.xib; sourceTree = "<group>"; };
 		7C88971228F9FC2F0031E5FB /* PartnersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersViewModel.swift; sourceTree = "<group>"; };
 		7C88971428F9FC3E0031E5FB /* PartnersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersCoordinator.swift; sourceTree = "<group>"; };
+		7C88971628FA99CB0031E5FB /* RepositoryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModule.swift; sourceTree = "<group>"; };
+		7C88971B28FA9A330031E5FB /* RepositoryModuleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModuleProtocol.swift; sourceTree = "<group>"; };
+		7C88971D28FA9A640031E5FB /* CategoriesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesProtocol.swift; sourceTree = "<group>"; };
+		7C88971F28FA9A780031E5FB /* ProblemReportProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemReportProtocol.swift; sourceTree = "<group>"; };
+		7C88972128FA9A8B0031E5FB /* ContactDataProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDataProtocol.swift; sourceTree = "<group>"; };
+		7C88972328FA9A9D0031E5FB /* DonationsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsProtocol.swift; sourceTree = "<group>"; };
+		7C88972528FA9AAA0031E5FB /* NewsPorotocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsPorotocol.swift; sourceTree = "<group>"; };
+		7C88972728FA9AC70031E5FB /* PartnerDetailsProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerDetailsProtocol.swift; sourceTree = "<group>"; };
+		7C88972A28FA9B6E0031E5FB /* ProblemReportModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemReportModel.swift; sourceTree = "<group>"; };
+		7C88972C28FA9BBF0031E5FB /* ManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerProtocol.swift; sourceTree = "<group>"; };
+		7C88972F28FA9BD60031E5FB /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		7C88973228FA9F1A0031E5FB /* DonationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsCoordinator.swift; sourceTree = "<group>"; };
+		7C88973528FA9F2F0031E5FB /* DonationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsViewModel.swift; sourceTree = "<group>"; };
+		7C88973728FA9F4E0031E5FB /* DonationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
+		7C88973828FA9F4E0031E5FB /* DonationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonationsViewController.xib; sourceTree = "<group>"; };
+		7C88973B28FA9F700031E5FB /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		7C88973C28FA9F700031E5FB /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
+		7C88973F28FA9F840031E5FB /* ContactCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCoordinator.swift; sourceTree = "<group>"; };
+		7C88974128FA9F930031E5FB /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
+		7C88974328FAA0840031E5FB /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		7C88974528FAA0980031E5FB /* ContactScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactScreenModel.swift; sourceTree = "<group>"; };
+		7C88974728FAA0AD0031E5FB /* DonationsScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsScreenModel.swift; sourceTree = "<group>"; };
+		7C88974928FAA0B80031E5FB /* Link.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Link.swift; sourceTree = "<group>"; };
+		7C88974B28FAA0C90031E5FB /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		7C88974D28FAA0DC0031E5FB /* Partner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Partner.swift; sourceTree = "<group>"; };
+		7C88974F28FAA0EA0031E5FB /* PartnersScreenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersScreenModel.swift; sourceTree = "<group>"; };
 		98C41C581C5ED718D7E80FB5 /* Pods_zeleniKljucHakaton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_zeleniKljucHakaton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -178,6 +230,7 @@
 		7C8896EF28F9F2FD0031E5FB /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				7C88972928FA9B550031E5FB /* Models */,
 				7C88970528F9FA7E0031E5FB /* ReportProblem */,
 				7C88970428F9FA710031E5FB /* Contact */,
 				7C88970328F9FA680031E5FB /* Donations */,
@@ -192,6 +245,9 @@
 		7C8896F028F9F30B0031E5FB /* domain */ = {
 			isa = PBXGroup;
 			children = (
+				7C88971628FA99CB0031E5FB /* RepositoryModule.swift */,
+				7C88973128FA9D140031E5FB /* libraries */,
+				7C88971828FA99CE0031E5FB /* protocols */,
 			);
 			path = domain;
 			sourceTree = "<group>";
@@ -199,6 +255,8 @@
 		7C8896F128F9F3120031E5FB /* data */ = {
 			isa = PBXGroup;
 			children = (
+				7C88972C28FA9BBF0031E5FB /* ManagerProtocol.swift */,
+				7C88972E28FA9BC40031E5FB /* firebase */,
 			);
 			path = data;
 			sourceTree = "<group>";
@@ -238,6 +296,10 @@
 		7C88970328F9FA680031E5FB /* Donations */ = {
 			isa = PBXGroup;
 			children = (
+				7C88973828FA9F4E0031E5FB /* DonationsViewController.xib */,
+				7C88973728FA9F4E0031E5FB /* DonationsViewController.swift */,
+				7C88973528FA9F2F0031E5FB /* DonationsViewModel.swift */,
+				7C88973228FA9F1A0031E5FB /* DonationsCoordinator.swift */,
 			);
 			path = Donations;
 			sourceTree = "<group>";
@@ -245,6 +307,10 @@
 		7C88970428F9FA710031E5FB /* Contact */ = {
 			isa = PBXGroup;
 			children = (
+				7C88973B28FA9F700031E5FB /* ContactViewController.swift */,
+				7C88973C28FA9F700031E5FB /* ContactViewController.xib */,
+				7C88974128FA9F930031E5FB /* ContactViewModel.swift */,
+				7C88973F28FA9F840031E5FB /* ContactCoordinator.swift */,
 			);
 			path = Contact;
 			sourceTree = "<group>";
@@ -254,6 +320,66 @@
 			children = (
 			);
 			path = ReportProblem;
+			sourceTree = "<group>";
+		};
+		7C88971828FA99CE0031E5FB /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				7C88971A28FA9A1A0031E5FB /* useCases */,
+				7C88971928FA9A120031E5FB /* repository */,
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		7C88971928FA9A120031E5FB /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				7C88971B28FA9A330031E5FB /* RepositoryModuleProtocol.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
+		7C88971A28FA9A1A0031E5FB /* useCases */ = {
+			isa = PBXGroup;
+			children = (
+				7C88971D28FA9A640031E5FB /* CategoriesProtocol.swift */,
+				7C88971F28FA9A780031E5FB /* ProblemReportProtocol.swift */,
+				7C88972128FA9A8B0031E5FB /* ContactDataProtocol.swift */,
+				7C88972328FA9A9D0031E5FB /* DonationsProtocol.swift */,
+				7C88972528FA9AAA0031E5FB /* NewsPorotocol.swift */,
+				7C88972728FA9AC70031E5FB /* PartnerDetailsProtocol.swift */,
+			);
+			path = useCases;
+			sourceTree = "<group>";
+		};
+		7C88972928FA9B550031E5FB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7C88972A28FA9B6E0031E5FB /* ProblemReportModel.swift */,
+				7C88974328FAA0840031E5FB /* CategoryModel.swift */,
+				7C88974528FAA0980031E5FB /* ContactScreenModel.swift */,
+				7C88974728FAA0AD0031E5FB /* DonationsScreenModel.swift */,
+				7C88974928FAA0B80031E5FB /* Link.swift */,
+				7C88974B28FAA0C90031E5FB /* News.swift */,
+				7C88974D28FAA0DC0031E5FB /* Partner.swift */,
+				7C88974F28FAA0EA0031E5FB /* PartnersScreenModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7C88972E28FA9BC40031E5FB /* firebase */ = {
+			isa = PBXGroup;
+			children = (
+				7C88972F28FA9BD60031E5FB /* FirebaseManager.swift */,
+			);
+			path = firebase;
+			sourceTree = "<group>";
+		};
+		7C88973128FA9D140031E5FB /* libraries */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = libraries;
 			sourceTree = "<group>";
 		};
 		C8EA46EAC3F1A7AFAC20F139 /* Pods */ = {
@@ -380,7 +506,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C8896C928F9EECA0031E5FB /* LaunchScreen.storyboard in Resources */,
+				7C88973E28FA9F700031E5FB /* ContactViewController.xib in Resources */,
 				7C88971128F9FC160031E5FB /* PartnersViewController.xib in Resources */,
+				7C88973A28FA9F4E0031E5FB /* DonationsViewController.xib in Resources */,
 				7C8896ED28F9F1080031E5FB /* GoogleService-Info.plist in Resources */,
 				7C8896F528F9F32B0031E5FB /* HomeViewController.xib in Resources */,
 				7C8896C628F9EECA0031E5FB /* Assets.xcassets in Resources */,
@@ -452,19 +580,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C88974428FAA0840031E5FB /* CategoryModel.swift in Sources */,
+				7C88975028FAA0EA0031E5FB /* PartnersScreenModel.swift in Sources */,
+				7C88972628FA9AAA0031E5FB /* NewsPorotocol.swift in Sources */,
+				7C88973D28FA9F700031E5FB /* ContactViewController.swift in Sources */,
+				7C88972B28FA9B6E0031E5FB /* ProblemReportModel.swift in Sources */,
 				7C8896BD28F9EECA0031E5FB /* AppDelegate.swift in Sources */,
 				7C88970B28F9FAE70031E5FB /* NewsViewModel.swift in Sources */,
+				7C88972228FA9A8B0031E5FB /* ContactDataProtocol.swift in Sources */,
+				7C88972028FA9A780031E5FB /* ProblemReportProtocol.swift in Sources */,
+				7C88974E28FAA0DC0031E5FB /* Partner.swift in Sources */,
+				7C88974228FA9F930031E5FB /* ContactViewModel.swift in Sources */,
 				7C88971028F9FC160031E5FB /* PartnersViewController.swift in Sources */,
+				7C88972828FA9AC70031E5FB /* PartnerDetailsProtocol.swift in Sources */,
+				7C88971728FA99CB0031E5FB /* RepositoryModule.swift in Sources */,
 				7C8896F728F9F3430031E5FB /* HomeViewModel.swift in Sources */,
 				7C88971528F9FC3E0031E5FB /* PartnersCoordinator.swift in Sources */,
 				7C88970D28F9FB030031E5FB /* NewsCoordinator.swift in Sources */,
+				7C88973628FA9F300031E5FB /* DonationsViewModel.swift in Sources */,
+				7C88974628FAA0980031E5FB /* ContactScreenModel.swift in Sources */,
+				7C88974A28FAA0B80031E5FB /* Link.swift in Sources */,
+				7C88974C28FAA0C90031E5FB /* News.swift in Sources */,
+				7C88973028FA9BD60031E5FB /* FirebaseManager.swift in Sources */,
 				7C8896FC28F9F5D00031E5FB /* TabBarViewControllerFactory.swift in Sources */,
 				7C8896F428F9F32B0031E5FB /* HomeViewController.swift in Sources */,
+				7C88973328FA9F1A0031E5FB /* DonationsCoordinator.swift in Sources */,
+				7C88972428FA9A9D0031E5FB /* DonationsProtocol.swift in Sources */,
 				7C8896F928F9F35C0031E5FB /* HomeCoordinator.swift in Sources */,
+				7C88971C28FA9A330031E5FB /* RepositoryModuleProtocol.swift in Sources */,
+				7C88974828FAA0AD0031E5FB /* DonationsScreenModel.swift in Sources */,
+				7C88971E28FA9A640031E5FB /* CategoriesProtocol.swift in Sources */,
+				7C88973928FA9F4E0031E5FB /* DonationsViewController.swift in Sources */,
 				7C88970028F9F6100031E5FB /* TabBarNavigationController.swift in Sources */,
+				7C88974028FA9F840031E5FB /* ContactCoordinator.swift in Sources */,
 				7C88971328F9FC2F0031E5FB /* PartnersViewModel.swift in Sources */,
 				7C8896FE28F9F5E00031E5FB /* NavigationTab.swift in Sources */,
 				7C88970828F9FAAE0031E5FB /* NewsViewController.swift in Sources */,
+				7C88972D28FA9BBF0031E5FB /* ManagerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

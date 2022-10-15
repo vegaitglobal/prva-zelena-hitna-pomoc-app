@@ -9,14 +9,22 @@ import UIKit
 
 class PartnersCoordinator {
     private let presenter: UINavigationController
+    let manager: RepositoryModule
     
-    init(presenter: UINavigationController) {
+    init(presenter: UINavigationController, manager: RepositoryModule) {
         self.presenter = presenter
+        self.manager = manager
     }
     
     func start() {
         let partnersViewDelegate = PartnersViewModel(coordinator: self)
         let partnersViewController = PartnersViewController(viewModel: partnersViewDelegate)
         presenter.pushViewController(partnersViewController, animated: false)
+    }
+    
+    func createViewController() -> UIViewController {
+        let partnersViewDelegate = PartnersViewModel(coordinator: self)
+        let partnersViewController = PartnersViewController(viewModel: partnersViewDelegate)
+        return partnersViewController
     }
 }

@@ -18,11 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
-        let navigationController = UINavigationController()
-        let coordinator = HomeCoordinator(presenter: navigationController)
-        coordinator.start()
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = navigationController
+        let start = TabBarNavigationViewController(tabBarFactory: TabBarViewControllerFactory(appDelegate: self))
+        window?.rootViewController = start
         window?.makeKeyAndVisible()
         
         return true

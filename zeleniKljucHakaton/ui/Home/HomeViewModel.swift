@@ -14,9 +14,11 @@ protocol HomeViewDelegate {
 class HomeViewModel: HomeViewDelegate {
     weak var viewDelegate: HomeViewControllerDelegating?
     private var coordinator: HomeCoordinator?
+    var requestManager: RepositoryModule
 
-    init (coordinator: HomeCoordinator) {
+    init (coordinator: HomeCoordinator, manager: RepositoryModule) {
         self.coordinator = coordinator
+        self.requestManager = manager
     }
 }
 

@@ -9,14 +9,22 @@ import UIKit
 
 class NewsCoordinator {
     private let presenter: UINavigationController
+    let manager: RepositoryModule
     
-    init(presenter: UINavigationController) {
+    init(presenter: UINavigationController, manager: RepositoryModule) {
         self.presenter = presenter
+        self.manager = manager
     }
     
     func start() {
-        let newsViewModel = NewsViewModel(coordinator: self)
+        let newsViewModel = NewsViewModel(coordinator: self, manager: manager)
         let newsViewController = NewsViewController(viewModel:  newsViewModel)
         presenter.pushViewController(newsViewController, animated: false)
+    }
+    
+    func createViewController() -> UIViewController {
+        let newsViewModel = NewsViewModel(coordinator: self, manager: manager)
+        let newsViewController = NewsViewController(viewModel:  newsViewModel)
+        return newsViewController
     }
 }
