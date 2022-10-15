@@ -10,6 +10,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DonationsViewController" customModule="zeleniKljucHakaton" customModuleProvider="target">
             <connections>
+                <outlet property="cardNumber" destination="lZe-DD-NtO" id="Mwg-lB-MuO"/>
+                <outlet property="donationsDescription" destination="Wtr-JW-dpG" id="7ma-zv-nb5"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -17,9 +19,49 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doniraj" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XfL-fx-x3U">
+                    <rect key="frame" x="25" y="44" width="364" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broj našeg računa: " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isX-x6-TFp">
+                    <rect key="frame" x="25" y="98" width="364" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtr-JW-dpG">
+                    <rect key="frame" x="25" y="152.5" width="364" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.23296272749999999" green="0.52554482219999998" blue="0.65403217079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZe-DD-NtO">
+                    <rect key="frame" x="25" y="122.5" width="364" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-            <point key="canvasLocation" x="132" y="106"/>
+            <constraints>
+                <constraint firstItem="Wtr-JW-dpG" firstAttribute="top" secondItem="lZe-DD-NtO" secondAttribute="bottom" constant="30" id="1c8-Ps-sdQ"/>
+                <constraint firstItem="lZe-DD-NtO" firstAttribute="top" secondItem="isX-x6-TFp" secondAttribute="bottom" constant="5" id="5CK-5c-oad"/>
+                <constraint firstItem="isX-x6-TFp" firstAttribute="top" secondItem="XfL-fx-x3U" secondAttribute="bottom" constant="25" id="EV0-hE-RPO"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XfL-fx-x3U" secondAttribute="trailing" constant="25" id="Ilz-Uo-vNc"/>
+                <constraint firstItem="XfL-fx-x3U" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bB7-df-cDN"/>
+                <constraint firstItem="lZe-DD-NtO" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="cxq-Rc-ZiT"/>
+                <constraint firstItem="isX-x6-TFp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="d0X-eO-8rF"/>
+                <constraint firstItem="XfL-fx-x3U" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="dvw-oY-3wP"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="isX-x6-TFp" secondAttribute="trailing" constant="25" id="fZX-X9-5XZ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Wtr-JW-dpG" secondAttribute="trailing" constant="25" id="kZJ-oQ-ZbB"/>
+                <constraint firstItem="Wtr-JW-dpG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="oBY-Ph-g7a"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lZe-DD-NtO" secondAttribute="trailing" constant="25" id="vke-zc-38A"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="72.991071428571431"/>
         </view>
     </objects>
     <resources>

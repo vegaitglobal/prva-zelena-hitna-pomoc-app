@@ -9,16 +9,33 @@ import UIKit
 
 protocol NewsViewDelegate {
     var viewDelegate: NewsViewControllerDelegating? { get set }
+    var news: [News]? { get set }
+    func getNumberOfNews() -> Int
+    func getNewsFromDb()
 }
 
-final class NewsViewModel: NewsViewDelegate {
+class NewsViewModel: NewsViewDelegate {
     private var coordinator: NewsCoordinator?
-    var viewDelegate: NewsViewControllerDelegating?
     let requestManager: RepositoryModule
+    weak var viewDelegate: NewsViewControllerDelegating?
+    var news: [News]? {
+        didSet {
+            viewDelegate?.reloadData()
+        }
+    }
     
     init (coordinator: NewsCoordinator, manager: RepositoryModule) {
         self.coordinator = coordinator
         self.requestManager = manager
+//        self.getNewsFromDb()
+    }
+    
+    func getNewsFromDb() {
+        requestManager.getAllNews()
+    }
+    
+    func getNumberOfNews() -> Int {
+        news?.count ?? 0
     }
 }
 

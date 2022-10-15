@@ -8,6 +8,7 @@
 import UIKit
 
 protocol ContactViewDelegate {
+    func getContactInformationsFromDb()
 }
 
 class ContactViewModel: ContactViewDelegate {
@@ -17,5 +18,9 @@ class ContactViewModel: ContactViewDelegate {
     init (coordinator: ContactCoordinator, manager: RepositoryModule) {
         self.coordinator = coordinator
         self.requestManager = manager
+    }
+    
+    func getContactInformationsFromDb() {
+        requestManager.getContactInformations()
     }
 }

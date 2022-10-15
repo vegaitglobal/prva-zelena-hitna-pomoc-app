@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DonationsViewController: UIViewController {
+final class DonationsViewController: UIViewController {
     var viewModel: DonationsViewDelegate
     @IBOutlet weak var cardNumber: UILabel!
     @IBOutlet weak var donationsDescription: UILabel!
@@ -23,5 +23,19 @@ class DonationsViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.getDonationsInformations()
+        NotificationCenter.default.addObserver(self, selector: #selector(getDonationsInformations), name: Notification.Name.donations, object: nil)
+    }
+    
+    @objc func getDonationsInformations(notification: NSNotification) {
+        let donationsInfo = notification.object as? DonationsScreenModel
+        cardNumber.text = donationsInfo?.cardNumber ?? ""
+        donationsDescription.text = donationsInfo?.description ?? ""
+
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = false
     }
 }

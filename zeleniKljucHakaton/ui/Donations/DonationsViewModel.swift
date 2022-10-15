@@ -8,6 +8,7 @@
 import UIKit
 
 protocol DonationsViewDelegate {
+    func getDonationsInformations()
 }
 
 class DonationsViewModel: DonationsViewDelegate {
@@ -17,5 +18,9 @@ class DonationsViewModel: DonationsViewDelegate {
     init (coordinator: DonationsCoordinator, manager: RepositoryModule) {
         self.coordinator = coordinator
         self.requestManager = manager
+    }
+    
+    func getDonationsInformations() {
+        requestManager.getDonationsData()
     }
 }

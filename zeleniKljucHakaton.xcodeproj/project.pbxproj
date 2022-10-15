@@ -10,6 +10,17 @@
 		532844D028FAAAC5008695F3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532844CF28FAAAC5008695F3 /* ImagePicker.swift */; };
 		532844D228FAAD6D008695F3 /* Coordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532844D128FAAD6D008695F3 /* Coordinating.swift */; };
 		664D5AB2328B7F200D3E3EF6 /* Pods_zeleniKljucHakaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C41C581C5ED718D7E80FB5 /* Pods_zeleniKljucHakaton.framework */; };
+		7C69832B28FAC3CB0037B44B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69832928FAC3CB0037B44B /* ContactViewController.swift */; };
+		7C69832C28FAC3CB0037B44B /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69832A28FAC3CB0037B44B /* ContactViewController.xib */; };
+		7C69832F28FAC4640037B44B /* NotificationName+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69832E28FAC4640037B44B /* NotificationName+extension.swift */; };
+		7C69833228FAC5290037B44B /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69833028FAC5290037B44B /* NewsViewController.swift */; };
+		7C69833328FAC5290037B44B /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69833128FAC5290037B44B /* NewsViewController.xib */; };
+		7C69833628FAC5470037B44B /* NewsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69833428FAC5470037B44B /* NewsCollectionViewCell.swift */; };
+		7C69833728FAC5470037B44B /* NewsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69833528FAC5470037B44B /* NewsCollectionViewCell.xib */; };
+		7C69833928FAC66E0037B44B /* PartnersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69833828FAC66E0037B44B /* PartnersViewController.xib */; };
+		7C69833C28FAC6760037B44B /* PartnersCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69833A28FAC6750037B44B /* PartnersCollectionViewCell.swift */; };
+		7C69833D28FAC6760037B44B /* PartnersCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69833B28FAC6760037B44B /* PartnersCollectionViewCell.xib */; };
+		7C69833F28FAC6FB0037B44B /* DonationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69833E28FAC6FB0037B44B /* DonationsViewController.xib */; };
 		7C8896BD28F9EECA0031E5FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8896BC28F9EECA0031E5FB /* AppDelegate.swift */; };
 		7C8896C428F9EECA0031E5FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8896C228F9EECA0031E5FB /* Main.storyboard */; };
 		7C8896C628F9EECA0031E5FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8896C528F9EECA0031E5FB /* Assets.xcassets */; };
@@ -25,12 +36,9 @@
 		7C8896FC28F9F5D00031E5FB /* TabBarViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8896FB28F9F5D00031E5FB /* TabBarViewControllerFactory.swift */; };
 		7C8896FE28F9F5E00031E5FB /* NavigationTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8896FD28F9F5E00031E5FB /* NavigationTab.swift */; };
 		7C88970028F9F6100031E5FB /* TabBarNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8896FF28F9F6100031E5FB /* TabBarNavigationController.swift */; };
-		7C88970828F9FAAE0031E5FB /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88970628F9FAAE0031E5FB /* NewsViewController.swift */; };
-		7C88970928F9FAAE0031E5FB /* NewsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C88970728F9FAAE0031E5FB /* NewsViewController.xib */; };
 		7C88970B28F9FAE70031E5FB /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88970A28F9FAE70031E5FB /* NewsViewModel.swift */; };
 		7C88970D28F9FB030031E5FB /* NewsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88970C28F9FB030031E5FB /* NewsCoordinator.swift */; };
 		7C88971028F9FC160031E5FB /* PartnersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88970E28F9FC160031E5FB /* PartnersViewController.swift */; };
-		7C88971128F9FC160031E5FB /* PartnersViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C88970F28F9FC160031E5FB /* PartnersViewController.xib */; };
 		7C88971328F9FC2F0031E5FB /* PartnersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88971228F9FC2F0031E5FB /* PartnersViewModel.swift */; };
 		7C88971528F9FC3E0031E5FB /* PartnersCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88971428F9FC3E0031E5FB /* PartnersCoordinator.swift */; };
 		7C88971728FA99CB0031E5FB /* RepositoryModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88971628FA99CB0031E5FB /* RepositoryModule.swift */; };
@@ -47,9 +55,6 @@
 		7C88973328FA9F1A0031E5FB /* DonationsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88973228FA9F1A0031E5FB /* DonationsCoordinator.swift */; };
 		7C88973628FA9F300031E5FB /* DonationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88973528FA9F2F0031E5FB /* DonationsViewModel.swift */; };
 		7C88973928FA9F4E0031E5FB /* DonationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88973728FA9F4E0031E5FB /* DonationsViewController.swift */; };
-		7C88973A28FA9F4E0031E5FB /* DonationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C88973828FA9F4E0031E5FB /* DonationsViewController.xib */; };
-		7C88973D28FA9F700031E5FB /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88973B28FA9F700031E5FB /* ContactViewController.swift */; };
-		7C88973E28FA9F700031E5FB /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C88973C28FA9F700031E5FB /* ContactViewController.xib */; };
 		7C88974028FA9F840031E5FB /* ContactCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88973F28FA9F840031E5FB /* ContactCoordinator.swift */; };
 		7C88974228FA9F930031E5FB /* ContactViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88974128FA9F930031E5FB /* ContactViewModel.swift */; };
 		7C88974428FAA0840031E5FB /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C88974328FAA0840031E5FB /* CategoryModel.swift */; };
@@ -83,6 +88,17 @@
 		532844CF28FAAAC5008695F3 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		532844D128FAAD6D008695F3 /* Coordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinating.swift; sourceTree = "<group>"; };
 		654DD142DA2F0D8E7E45A348 /* Pods-zeleniKljucHakaton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zeleniKljucHakaton.release.xcconfig"; path = "Target Support Files/Pods-zeleniKljucHakaton/Pods-zeleniKljucHakaton.release.xcconfig"; sourceTree = "<group>"; };
+		7C69832928FAC3CB0037B44B /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		7C69832A28FAC3CB0037B44B /* ContactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
+		7C69832E28FAC4640037B44B /* NotificationName+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationName+extension.swift"; sourceTree = "<group>"; };
+		7C69833028FAC5290037B44B /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		7C69833128FAC5290037B44B /* NewsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
+		7C69833428FAC5470037B44B /* NewsCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCollectionViewCell.swift; sourceTree = "<group>"; };
+		7C69833528FAC5470037B44B /* NewsCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewsCollectionViewCell.xib; sourceTree = "<group>"; };
+		7C69833828FAC66E0037B44B /* PartnersViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PartnersViewController.xib; sourceTree = "<group>"; };
+		7C69833A28FAC6750037B44B /* PartnersCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartnersCollectionViewCell.swift; sourceTree = "<group>"; };
+		7C69833B28FAC6760037B44B /* PartnersCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PartnersCollectionViewCell.xib; sourceTree = "<group>"; };
+		7C69833E28FAC6FB0037B44B /* DonationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DonationsViewController.xib; sourceTree = "<group>"; };
 		7C8896B928F9EECA0031E5FB /* zeleniKljucHakaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zeleniKljucHakaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8896BC28F9EECA0031E5FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C8896C328F9EECA0031E5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -102,12 +118,9 @@
 		7C8896FB28F9F5D00031E5FB /* TabBarViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewControllerFactory.swift; sourceTree = "<group>"; };
 		7C8896FD28F9F5E00031E5FB /* NavigationTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTab.swift; sourceTree = "<group>"; };
 		7C8896FF28F9F6100031E5FB /* TabBarNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarNavigationController.swift; sourceTree = "<group>"; };
-		7C88970628F9FAAE0031E5FB /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
-		7C88970728F9FAAE0031E5FB /* NewsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsViewController.xib; sourceTree = "<group>"; };
 		7C88970A28F9FAE70031E5FB /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
 		7C88970C28F9FB030031E5FB /* NewsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCoordinator.swift; sourceTree = "<group>"; };
 		7C88970E28F9FC160031E5FB /* PartnersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersViewController.swift; sourceTree = "<group>"; };
-		7C88970F28F9FC160031E5FB /* PartnersViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PartnersViewController.xib; sourceTree = "<group>"; };
 		7C88971228F9FC2F0031E5FB /* PartnersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersViewModel.swift; sourceTree = "<group>"; };
 		7C88971428F9FC3E0031E5FB /* PartnersCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnersCoordinator.swift; sourceTree = "<group>"; };
 		7C88971628FA99CB0031E5FB /* RepositoryModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryModule.swift; sourceTree = "<group>"; };
@@ -124,9 +137,6 @@
 		7C88973228FA9F1A0031E5FB /* DonationsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsCoordinator.swift; sourceTree = "<group>"; };
 		7C88973528FA9F2F0031E5FB /* DonationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsViewModel.swift; sourceTree = "<group>"; };
 		7C88973728FA9F4E0031E5FB /* DonationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsViewController.swift; sourceTree = "<group>"; };
-		7C88973828FA9F4E0031E5FB /* DonationsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DonationsViewController.xib; sourceTree = "<group>"; };
-		7C88973B28FA9F700031E5FB /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
-		7C88973C28FA9F700031E5FB /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
 		7C88973F28FA9F840031E5FB /* ContactCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactCoordinator.swift; sourceTree = "<group>"; };
 		7C88974128FA9F930031E5FB /* ContactViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewModel.swift; sourceTree = "<group>"; };
 		7C88974328FAA0840031E5FB /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
@@ -173,6 +183,14 @@
 			path = "Image Picker";
 			sourceTree = "<group>";
 		};
+		7C69832D28FAC4470037B44B /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7C69832E28FAC4640037B44B /* NotificationName+extension.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		7C8896B028F9EEC90031E5FB = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +216,7 @@
 		7C8896BB28F9EECA0031E5FB /* zeleniKljucHakaton */ = {
 			isa = PBXGroup;
 			children = (
+				7C69832D28FAC4470037B44B /* extensions */,
 				7C8896F128F9F3120031E5FB /* data */,
 				7C8896F028F9F30B0031E5FB /* domain */,
 				7C8896EF28F9F2FD0031E5FB /* ui */,
@@ -286,10 +305,12 @@
 		7C88970128F9F64F0031E5FB /* News */ = {
 			isa = PBXGroup;
 			children = (
-				7C88970728F9FAAE0031E5FB /* NewsViewController.xib */,
-				7C88970628F9FAAE0031E5FB /* NewsViewController.swift */,
+				7C69833128FAC5290037B44B /* NewsViewController.xib */,
+				7C69833028FAC5290037B44B /* NewsViewController.swift */,
 				7C88970A28F9FAE70031E5FB /* NewsViewModel.swift */,
 				7C88970C28F9FB030031E5FB /* NewsCoordinator.swift */,
+				7C69833428FAC5470037B44B /* NewsCollectionViewCell.swift */,
+				7C69833528FAC5470037B44B /* NewsCollectionViewCell.xib */,
 			);
 			path = News;
 			sourceTree = "<group>";
@@ -297,10 +318,12 @@
 		7C88970228F9F7D10031E5FB /* Partners */ = {
 			isa = PBXGroup;
 			children = (
-				7C88970F28F9FC160031E5FB /* PartnersViewController.xib */,
+				7C69833828FAC66E0037B44B /* PartnersViewController.xib */,
 				7C88970E28F9FC160031E5FB /* PartnersViewController.swift */,
 				7C88971228F9FC2F0031E5FB /* PartnersViewModel.swift */,
 				7C88971428F9FC3E0031E5FB /* PartnersCoordinator.swift */,
+				7C69833A28FAC6750037B44B /* PartnersCollectionViewCell.swift */,
+				7C69833B28FAC6760037B44B /* PartnersCollectionViewCell.xib */,
 			);
 			path = Partners;
 			sourceTree = "<group>";
@@ -308,7 +331,7 @@
 		7C88970328F9FA680031E5FB /* Donations */ = {
 			isa = PBXGroup;
 			children = (
-				7C88973828FA9F4E0031E5FB /* DonationsViewController.xib */,
+				7C69833E28FAC6FB0037B44B /* DonationsViewController.xib */,
 				7C88973728FA9F4E0031E5FB /* DonationsViewController.swift */,
 				7C88973528FA9F2F0031E5FB /* DonationsViewModel.swift */,
 				7C88973228FA9F1A0031E5FB /* DonationsCoordinator.swift */,
@@ -319,8 +342,8 @@
 		7C88970428F9FA710031E5FB /* Contact */ = {
 			isa = PBXGroup;
 			children = (
-				7C88973B28FA9F700031E5FB /* ContactViewController.swift */,
-				7C88973C28FA9F700031E5FB /* ContactViewController.xib */,
+				7C69832A28FAC3CB0037B44B /* ContactViewController.xib */,
+				7C69832928FAC3CB0037B44B /* ContactViewController.swift */,
 				7C88974128FA9F930031E5FB /* ContactViewModel.swift */,
 				7C88973F28FA9F840031E5FB /* ContactCoordinator.swift */,
 			);
@@ -520,14 +543,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				7C8896C928F9EECA0031E5FB /* LaunchScreen.storyboard in Resources */,
-				7C88973E28FA9F700031E5FB /* ContactViewController.xib in Resources */,
-				7C88971128F9FC160031E5FB /* PartnersViewController.xib in Resources */,
-				7C88973A28FA9F4E0031E5FB /* DonationsViewController.xib in Resources */,
+				7C69833928FAC66E0037B44B /* PartnersViewController.xib in Resources */,
+				7C69832C28FAC3CB0037B44B /* ContactViewController.xib in Resources */,
+				7C69833728FAC5470037B44B /* NewsCollectionViewCell.xib in Resources */,
 				7C8896ED28F9F1080031E5FB /* GoogleService-Info.plist in Resources */,
+				7C69833F28FAC6FB0037B44B /* DonationsViewController.xib in Resources */,
 				7C8896F528F9F32B0031E5FB /* HomeViewController.xib in Resources */,
 				7C8896C628F9EECA0031E5FB /* Assets.xcassets in Resources */,
+				7C69833D28FAC6760037B44B /* PartnersCollectionViewCell.xib in Resources */,
 				7C8896C428F9EECA0031E5FB /* Main.storyboard in Resources */,
-				7C88970928F9FAAE0031E5FB /* NewsViewController.xib in Resources */,
+				7C69833328FAC5290037B44B /* NewsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,8 +621,8 @@
 			files = (
 				7C88974428FAA0840031E5FB /* CategoryModel.swift in Sources */,
 				7C88975028FAA0EA0031E5FB /* PartnersScreenModel.swift in Sources */,
+				7C69832B28FAC3CB0037B44B /* ContactViewController.swift in Sources */,
 				7C88972628FA9AAA0031E5FB /* NewsPorotocol.swift in Sources */,
-				7C88973D28FA9F700031E5FB /* ContactViewController.swift in Sources */,
 				7C88972B28FA9B6E0031E5FB /* ProblemReportModel.swift in Sources */,
 				7C8896BD28F9EECA0031E5FB /* AppDelegate.swift in Sources */,
 				7C88970B28F9FAE70031E5FB /* NewsViewModel.swift in Sources */,
@@ -608,14 +633,18 @@
 				7C88974228FA9F930031E5FB /* ContactViewModel.swift in Sources */,
 				7C88971028F9FC160031E5FB /* PartnersViewController.swift in Sources */,
 				7C88972828FA9AC70031E5FB /* PartnerDetailsProtocol.swift in Sources */,
+				7C69832F28FAC4640037B44B /* NotificationName+extension.swift in Sources */,
 				7C88971728FA99CB0031E5FB /* RepositoryModule.swift in Sources */,
 				7C8896F728F9F3430031E5FB /* HomeViewModel.swift in Sources */,
 				7C88971528F9FC3E0031E5FB /* PartnersCoordinator.swift in Sources */,
+				7C69833C28FAC6760037B44B /* PartnersCollectionViewCell.swift in Sources */,
+				7C69833628FAC5470037B44B /* NewsCollectionViewCell.swift in Sources */,
 				7C88970D28F9FB030031E5FB /* NewsCoordinator.swift in Sources */,
 				7C88973628FA9F300031E5FB /* DonationsViewModel.swift in Sources */,
 				7C88974628FAA0980031E5FB /* ContactScreenModel.swift in Sources */,
 				7C88974A28FAA0B80031E5FB /* Link.swift in Sources */,
 				7C88974C28FAA0C90031E5FB /* News.swift in Sources */,
+				7C69833228FAC5290037B44B /* NewsViewController.swift in Sources */,
 				7C88973028FA9BD60031E5FB /* FirebaseManager.swift in Sources */,
 				7C8896FC28F9F5D00031E5FB /* TabBarViewControllerFactory.swift in Sources */,
 				7C8896F428F9F32B0031E5FB /* HomeViewController.swift in Sources */,
@@ -630,7 +659,6 @@
 				7C88974028FA9F840031E5FB /* ContactCoordinator.swift in Sources */,
 				7C88971328F9FC2F0031E5FB /* PartnersViewModel.swift in Sources */,
 				7C8896FE28F9F5E00031E5FB /* NavigationTab.swift in Sources */,
-				7C88970828F9FAAE0031E5FB /* NewsViewController.swift in Sources */,
 				532844D228FAAD6D008695F3 /* Coordinating.swift in Sources */,
 				7C88972D28FA9BBF0031E5FB /* ManagerProtocol.swift in Sources */,
 			);

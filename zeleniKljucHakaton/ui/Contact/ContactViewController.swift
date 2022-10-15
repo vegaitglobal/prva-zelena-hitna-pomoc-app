@@ -1,14 +1,18 @@
 //
 //  ContactViewController.swift
-//  zeleniKljucHakaton
+//  zeleniKljuc
 //
-//  Created by Teodora Randjelovic on 10/15/22.
+//  Created by Teodora Randjelovic on 10/14/22.
 //
 
 import UIKit
 
 class ContactViewController: UIViewController {
     var viewModel: ContactViewDelegate
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var phoneNumberLabel: UILabel!
+    @IBOutlet weak var emailLabel: UILabel!
+    @IBOutlet weak var webAdressLabel: UILabel!
     
     init(viewModel: ContactViewDelegate) {
         self.viewModel = viewModel
@@ -21,5 +25,20 @@ class ContactViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.getContactInformationsFromDb()
+        NotificationCenter.default.addObserver(self, selector: #selector(getContactInformations), name: Notification.Name.contact, object: nil)
     }
+    
+    @objc func getContactInformations(notification: NSNotification) {
+        let contactInfo = notification.object as? ContactScreenModel
+        descriptionLabel.text = contactInfo?.description
+        phoneNumberLabel.text = "Broj telefona: \(contactInfo?.phoneNumber ?? "")"
+        emailLabel.text = "Email: \(contactInfo?.email ?? "")"
+        webAdressLabel.text = "Web: \(contactInfo?.webAdress ?? "")"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+          super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = false
+      }
 }

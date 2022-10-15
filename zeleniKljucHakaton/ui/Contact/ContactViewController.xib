@@ -1,22 +1,95 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactViewController" customModule="greenKeyApp" customModuleProvider="target">
             <connections>
+                <outlet property="descriptionLabel" destination="yWY-rO-P4l" id="uS1-d9-gua"/>
+                <outlet property="emailLabel" destination="2kx-XG-P43" id="X5j-Z3-wJh"/>
+                <outlet property="phoneNumberLabel" destination="BuQ-7w-wdT" id="jnR-pn-XVS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webAdressLabel" destination="zlx-wo-YT9" id="2Kw-kN-AHd"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kontakt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Om-u8-QFo">
+                    <rect key="frame" x="25" y="44" width="364" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWY-rO-P4l">
+                    <rect key="frame" x="25" y="93" width="364" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.23296272749999999" green="0.52554482219999998" blue="0.65403217079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZQ-FC-lXo">
+                    <rect key="frame" x="35" y="123" width="344" height="95"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Broj telefona: 018 000 000" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BuQ-7w-wdT">
+                            <rect key="frame" x="10" y="3" width="324" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email: zelenikljuc@" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kx-XG-P43">
+                            <rect key="frame" x="10" y="34" width="324" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Web: www.zelenikljuc.com" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zlx-wo-YT9">
+                            <rect key="frame" x="10" y="65" width="324" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="zlx-wo-YT9" secondAttribute="trailing" constant="10" id="5Tv-JY-Bj4"/>
+                        <constraint firstItem="zlx-wo-YT9" firstAttribute="leading" secondItem="iZQ-FC-lXo" secondAttribute="leading" constant="10" id="GQm-PL-2xP"/>
+                        <constraint firstAttribute="trailing" secondItem="2kx-XG-P43" secondAttribute="trailing" constant="10" id="RPN-Fi-Nt1"/>
+                        <constraint firstItem="BuQ-7w-wdT" firstAttribute="top" secondItem="iZQ-FC-lXo" secondAttribute="top" constant="3" id="XHc-a6-rge"/>
+                        <constraint firstItem="2kx-XG-P43" firstAttribute="top" secondItem="BuQ-7w-wdT" secondAttribute="bottom" constant="10" id="Y97-Yo-bjo"/>
+                        <constraint firstItem="2kx-XG-P43" firstAttribute="leading" secondItem="iZQ-FC-lXo" secondAttribute="leading" constant="10" id="g3N-YL-fLZ"/>
+                        <constraint firstAttribute="trailing" secondItem="BuQ-7w-wdT" secondAttribute="trailing" constant="10" id="jDI-BF-pwp"/>
+                        <constraint firstItem="BuQ-7w-wdT" firstAttribute="leading" secondItem="iZQ-FC-lXo" secondAttribute="leading" constant="10" id="lKd-Ng-fUU"/>
+                        <constraint firstAttribute="height" constant="95" id="pqj-rz-jig"/>
+                        <constraint firstItem="zlx-wo-YT9" firstAttribute="top" secondItem="2kx-XG-P43" secondAttribute="bottom" constant="10" id="x4m-bZ-SeJ"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2Om-u8-QFo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="1ZF-2L-Oxf"/>
+                <constraint firstItem="iZQ-FC-lXo" firstAttribute="top" secondItem="yWY-rO-P4l" secondAttribute="bottom" constant="30" id="LoZ-da-SUK"/>
+                <constraint firstItem="2Om-u8-QFo" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Vqa-iQ-eQB"/>
+                <constraint firstItem="iZQ-FC-lXo" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="XJO-1f-AlB"/>
+                <constraint firstItem="yWY-rO-P4l" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="Zbc-lI-eer"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2Om-u8-QFo" secondAttribute="trailing" constant="25" id="fbt-NV-WEq"/>
+                <constraint firstItem="yWY-rO-P4l" firstAttribute="top" secondItem="2Om-u8-QFo" secondAttribute="bottom" constant="20" id="npY-0k-3SA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yWY-rO-P4l" secondAttribute="trailing" constant="25" id="rxG-c7-eie"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="iZQ-FC-lXo" secondAttribute="trailing" constant="35" id="xZJ-jK-M8e"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="111.83035714285714"/>
         </view>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

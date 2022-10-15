@@ -36,7 +36,7 @@ final class FirebaseManager: ManagerProtocol {
                 }
             }
             
-//            NotificationCenter.default.post(name: Notification.Name.categories, object: self.categories)
+            NotificationCenter.default.post(name: Notification.Name.categories, object: self.categories)
         })
     }
     
@@ -45,7 +45,7 @@ final class FirebaseManager: ManagerProtocol {
     }
     
     func getAllNews() {
-        databaseRef.child("news").observeSingleEvent(of: .value, with: { snapshot in
+        databaseRef.child("News").observeSingleEvent(of: .value, with: { snapshot in
             if snapshot.childrenCount > 0 {
                 self.allNews.removeAll()
                 for news in snapshot.children.allObjects as! [DataSnapshot] {
@@ -65,30 +65,30 @@ final class FirebaseManager: ManagerProtocol {
                     self.allNews.append(news)
                 }
             }
-//            NotificationCenter.default.post(name: Notification.Name.news, object: self.allNews)
+            NotificationCenter.default.post(name: Notification.Name.news, object: self.allNews)
         })
     }
     
     
     func getPartnerDetails() {
-        databaseRef.child("partners").observeSingleEvent(of: .value, with: { snapshot in
+        databaseRef.child("Partners").observeSingleEvent(of: .value, with: { snapshot in
             //            print(snapshot.value)
         })
     }
     
     func getDonationsData() {
-        databaseRef.child("donations").observeSingleEvent(of: .value, with: { snapshot in
+        databaseRef.child("Donations").observeSingleEvent(of: .value, with: { snapshot in
             let value = snapshot.value as? NSDictionary
             let cardNumber = value?["cardNumber"] as? String ?? ""
             let description = value?["description"] as? String ?? ""
         
             let donationsInfo = DonationsScreenModel(cardNumber: cardNumber, description: description)
-//            NotificationCenter.default.post(name: Notification.Name.donations, object: donationsInfo)
+            NotificationCenter.default.post(name: Notification.Name.donations, object: donationsInfo)
         })
     }
     
     func getContactInformations() {
-        databaseRef.child("contact").observeSingleEvent(of: .value, with: { snapshot in
+        databaseRef.child("Contact").observeSingleEvent(of: .value, with: { snapshot in
             let contactObject = snapshot.value as? NSDictionary
             let desc = contactObject?["description"] as? String ?? ""
             let email  = contactObject?["email"] as? String ?? ""
@@ -103,7 +103,7 @@ final class FirebaseManager: ManagerProtocol {
                                                  webAdress: webAdress,
                                                  instagramProfile: instagramProfile,
                                                  facebookProfile: facebookProfile)
-//            NotificationCenter.default.post(name: Notification.Name.contact, object: contactInfo)
+            NotificationCenter.default.post(name: Notification.Name.contact, object: contactInfo)
         })
     }
 }

@@ -56,7 +56,7 @@ enum NavigationTab: Int, CaseIterable {
         var icon: UIImage? {
             switch self {
             case .home:
-                return UIImage(systemName: "person.fill")
+                return UIImage(systemName: "house.fill")
             case .news:
                 return UIImage(named: "Icon-news")
             case .partners:
@@ -71,7 +71,7 @@ enum NavigationTab: Int, CaseIterable {
         var selectedIcon: UIImage? {
             switch self {
             case .home:
-                return UIImage(systemName: "person.fill")
+                return UIImage(systemName: "house.fill")
             case .news:
                 return UIImage(named: "Icon-news")
             case .partners:
