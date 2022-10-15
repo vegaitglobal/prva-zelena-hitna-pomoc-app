@@ -12,6 +12,7 @@ class CategoriesInformationsViewController: UIViewController {
     @IBOutlet weak var categoryTitle: UILabel!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var categoryDescription: UILabel!
+    @IBOutlet weak var categoryIcon: CachedImageView!
     
     init(viewModel: CategoriesInformationsViewDelegate) {
         self.viewModel = viewModel
@@ -31,6 +32,8 @@ class CategoriesInformationsViewController: UIViewController {
     func screenSetup() {
         categoryTitle.text = viewModel.model.name
         categoryDescription.text = viewModel.model.description
+        guard let imageURL = viewModel.model.image else { return }
+        categoryIcon.loadImage(imageURL)
     }
     
     func tableSetup() {

@@ -34,7 +34,7 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x54-YA-StL" customClass="CachedImageView" customModule="zeleniKljucHakaton" customModuleProvider="target">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x54-YA-StL" customClass="CachedImageView" customModule="zeleniKljucHakaton" customModuleProvider="target">
                     <rect key="frame" x="25" y="119.5" width="364" height="270"/>
                     <color key="backgroundColor" red="0.92239851799999995" green="0.92239851799999995" blue="0.92239851799999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>

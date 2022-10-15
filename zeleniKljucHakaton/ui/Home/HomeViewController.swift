@@ -77,9 +77,8 @@ extension HomeViewController: UIScrollViewDelegate {
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let newModel = CategoryModel(id: "3", name: "Sume", image: "fdfsd", description: "Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor .", subcategories: [Link(id: "1", name: "ee", url: "fsf"), Link(id: "wew", name: "Dsfs", url: "1")])
+        guard let newModel = viewModel.categories?[indexPath.item] else { return }
         viewModel.continueToCategoriesScreen(model: newModel)
-//            mealCategory: viewModel.categories[indexPath.item].name , selectedMealCategoryId: viewModel.categories[indexPath.item].id)
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
