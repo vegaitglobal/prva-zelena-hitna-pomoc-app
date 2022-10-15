@@ -59,7 +59,7 @@ class HomeCoordinator {
     }
     
     func continueToCategoriesScreen(navigation: UINavigationController, model: CategoryModel) {
-//        let categoriesInformationsCoordinator = CategoriesInformationsCoordinator(presenter: navigation)
-//        categoriesInformationsCoordinator.start(model: model)
+        let categoriesInformationsCoordinator = CategoriesInformationsCoordinator(presenter: navigation)
+        categoriesInformationsCoordinator.start(model: model)
     }
 }

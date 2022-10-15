@@ -27,4 +27,9 @@ class NewsCoordinator {
         let newsViewController = NewsViewController(viewModel:  newsViewModel)
         return newsViewController
     }
+    
+    func continueToNewsDetails(navigation: UINavigationController, newsModel: News) {
+        let newsDetailsCoordinator = NewsDetailsCoordinator(presenter: navigation)
+        newsDetailsCoordinator.start(newsModel: newsModel)
+    }
 }

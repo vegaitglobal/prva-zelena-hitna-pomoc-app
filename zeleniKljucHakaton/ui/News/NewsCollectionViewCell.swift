@@ -10,7 +10,7 @@ import UIKit
 class NewsCollectionViewCell: UICollectionViewCell {
     static let identifier = "Cell"
     @IBOutlet weak var newsTitle: UILabel!
-    @IBOutlet weak var newsImage: UIImageView!
+    @IBOutlet weak var newsImage: CachedImageView!
     @IBOutlet weak var newsDescription: UILabel!
     @IBOutlet weak var newsDate: UILabel!
     
@@ -23,6 +23,8 @@ class NewsCollectionViewCell: UICollectionViewCell {
         newsTitle.text = model.title
         newsDescription.text = model.description
         newsDate.text = model.date
+        guard let imageURL = model.image else { return }
+        newsImage.loadImage(imageURL)
     }
 
 }

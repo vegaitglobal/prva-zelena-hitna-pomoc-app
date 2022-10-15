@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoriesInformationsViewController" customModule="greenKeyApp" customModuleProvider="target">
+            <connections>
+                <outlet property="categoryDescription" destination="tIo-m3-hS2" id="tZe-ZR-DBa"/>
+                <outlet property="categoryTitle" destination="gqM-10-4T1" id="tW6-XH-43f"/>
+                <outlet property="tableView" destination="kG9-H9-ykN" id="EEz-yS-uyL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gqM-10-4T1">
+                    <rect key="frame" x="25" y="54" width="364" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIo-m3-hS2">
+                    <rect key="frame" x="25" y="103" width="364" height="61"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.23296272749999999" green="0.52554482219999998" blue="0.65403217079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kG9-H9-ykN">
+                    <rect key="frame" x="25" y="194" width="364" height="643"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="gqM-10-4T1" secondAttribute="trailing" constant="25" id="2Yv-hA-ZDg"/>
+                <constraint firstItem="kG9-H9-ykN" firstAttribute="top" secondItem="tIo-m3-hS2" secondAttribute="bottom" constant="30" id="2gI-8G-3RA"/>
+                <constraint firstItem="tIo-m3-hS2" firstAttribute="top" secondItem="gqM-10-4T1" secondAttribute="bottom" constant="20" id="EJR-5b-ZXD"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kG9-H9-ykN" secondAttribute="trailing" constant="25" id="Hb9-xB-2zQ"/>
+                <constraint firstItem="gqM-10-4T1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="ItL-nZ-hBH"/>
+                <constraint firstItem="kG9-H9-ykN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="JyQ-lV-15o"/>
+                <constraint firstItem="tIo-m3-hS2" firstAttribute="top" secondItem="gqM-10-4T1" secondAttribute="bottom" constant="20" id="LD1-5C-vx1"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kG9-H9-ykN" secondAttribute="bottom" constant="25" id="cFA-Sg-GBh"/>
+                <constraint firstItem="tIo-m3-hS2" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="fcJ-HP-c48"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="tIo-m3-hS2" secondAttribute="trailing" constant="25" id="lQO-GZ-hTs"/>
+                <constraint firstItem="gqM-10-4T1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="y0Z-1s-eo3"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="97"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

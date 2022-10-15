@@ -68,7 +68,8 @@ class NewsViewController: UIViewController, NewsViewControllerDelegating {
 
 extension NewsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-//
+        guard let newsModel = viewModel.news?[indexPath.item] else { return }
+        viewModel.continueToNewsDetails(newsModel: newsModel )
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

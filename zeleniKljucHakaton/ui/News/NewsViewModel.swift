@@ -12,6 +12,7 @@ protocol NewsViewDelegate {
     var news: [News]? { get set }
     func getNumberOfNews() -> Int
     func getNewsFromDb()
+    func continueToNewsDetails(newsModel: News)
 }
 
 class NewsViewModel: NewsViewDelegate {
@@ -36,6 +37,12 @@ class NewsViewModel: NewsViewDelegate {
     
     func getNumberOfNews() -> Int {
         news?.count ?? 0
+    }
+    
+    func continueToNewsDetails(newsModel: News) {
+        guard let viewController = viewDelegate as? NewsViewController,
+              let navigation = viewController.navigationController else { return }
+        coordinator?.continueToNewsDetails(navigation: navigation, newsModel: newsModel)
     }
 }
 
