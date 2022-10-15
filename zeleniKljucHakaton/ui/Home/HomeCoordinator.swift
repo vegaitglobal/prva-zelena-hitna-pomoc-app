@@ -7,13 +7,8 @@
 
 import UIKit
 
-protocol HomeCoordinating: Coordinating {
-    func presentImagePicker()
-}
-
-final class HomeCoordinator: HomeCoordinating {
+class HomeCoordinator {
     private let presenter: UINavigationController
-    private var imagePicker: ImagePicker?
     let manager: RepositoryModule
     
     init(presenter: UINavigationController, manager: RepositoryModule) {
@@ -27,22 +22,44 @@ final class HomeCoordinator: HomeCoordinating {
         presenter.pushViewController(homeViewController, animated: false)
     }
     
-    func presentImagePicker() {
-        guard let imagePicker = imagePicker else { return }
-        imagePicker.present()
-    }
-    
     func createViewController() -> UIViewController {
         let homeViewModel = HomeViewModel(coordinator: self, manager: manager)
         let homeViewController = HomeViewController(viewModel: homeViewModel)
-        imagePicker = ImagePicker(presentationController: homeViewController,
-                                  delegate: homeViewModel,
-                                  mediaTypes: ["public.image"])
         return homeViewController
+    }
+    
+    func continueToNews() {
+        let newsCoordinator = NewsCoordinator(presenter: presenter, manager: manager)
+        newsCoordinator.start()
+    }
+    
+    func continueToPartners() {
+        let partnersCoordinator = PartnersCoordinator(presenter: presenter, manager: manager)
+        partnersCoordinator.start()
+    }
+    
+    func continueToDonations() {
+        let donationsCoordinator = DonationsCoordinator(presenter: presenter, manager: manager)
+        donationsCoordinator.start()
+    }
+    
+    func continueToContact() {
+        let contactCoordinator = ContactCoordinator(presenter: presenter, manager: manager)
+        contactCoordinator.start()
     }
     
     func continueToReport(navigation: UINavigationController) {
         let reportCoordinator = ReportCoordinator(presenter: navigation, manager: manager)
         reportCoordinator.start()
+    }
+    
+    func continueToMaps(navigation: UINavigationController) {
+//        let mapsCoordinator = MapsCoordinator(presenter: navigation)
+//        mapsCoordinator.start()
+    }
+    
+    func continueToCategoriesScreen(navigation: UINavigationController, model: CategoryModel) {
+//        let categoriesInformationsCoordinator = CategoriesInformationsCoordinator(presenter: navigation)
+//        categoriesInformationsCoordinator.start(model: model)
     }
 }

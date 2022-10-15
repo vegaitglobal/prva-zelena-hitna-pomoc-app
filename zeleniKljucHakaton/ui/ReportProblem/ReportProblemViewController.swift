@@ -60,7 +60,7 @@ class ReportViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     }
     
     @IBAction func categoryButtonPressed(_ sender: Any) {
-//        viewModel.continueToCategories()
+        viewModel.continueToCategories()
     }
     
     @IBAction func chooseLocation(_ sender: Any) {
@@ -68,9 +68,7 @@ class ReportViewController: UIViewController, UITextViewDelegate, UITextFieldDel
     }
     
     @IBAction func reportProblem(_ sender: Any) {
-//        let param = ["month": self.months.text!]
-//        model.downloadHolidays(parameters: param, url: URLServices.holidays)
-//        viewModel.continueToSuccesfulReport()
+        viewModel.continueToSuccesfulReport()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -90,15 +88,6 @@ class ReportViewController: UIViewController, UITextViewDelegate, UITextFieldDel
         isAnonymusChecked = !isAnonymusChecked
         (sender as AnyObject).setImage(UIImage(systemName: isAnonymusChecked ? "square" : "checkmark.square" ), for: .normal)
     }
-    
-//    @IBAction func addPhoto(_ sender: Any) {
-//        imagePicker =  UIImagePickerController()
-//        imagePicker.delegate = self
-//        imagePicker.allowsEditing = true
-//        imagePicker.sourceType = .camera
-//        
-//        present(imagePicker, animated: true, completion: nil)
-//    }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
         self.textView.text = nil

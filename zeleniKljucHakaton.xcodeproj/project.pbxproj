@@ -28,6 +28,18 @@
 		7C69835F28FAD9FA0037B44B /* ReportProblemViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69835D28FAD9FA0037B44B /* ReportProblemViewController.xib */; };
 		7C69836228FAE7770037B44B /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69836028FAE7770037B44B /* HomeCollectionViewCell.swift */; };
 		7C69836328FAE7770037B44B /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69836128FAE7770037B44B /* HomeCollectionViewCell.xib */; };
+		7C69836528FAE9B90037B44B /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69836428FAE9B90037B44B /* CustomImageView.swift */; };
+		7C69836C28FAEC9D0037B44B /* CategoriesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69836B28FAEC9D0037B44B /* CategoriesCoordinator.swift */; };
+		7C69836E28FAECAB0037B44B /* CategoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69836D28FAECAB0037B44B /* CategoriesViewModel.swift */; };
+		7C69837028FAECD80037B44B /* CategorySetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69836F28FAECD80037B44B /* CategorySetup.swift */; };
+		7C69837328FAED3D0037B44B /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69837128FAED3D0037B44B /* CategoriesViewController.swift */; };
+		7C69837428FAED3D0037B44B /* CategoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69837228FAED3D0037B44B /* CategoriesViewController.xib */; };
+		7C69837728FAED730037B44B /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69837528FAED730037B44B /* CategoryTableViewCell.swift */; };
+		7C69837828FAED730037B44B /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69837628FAED730037B44B /* CategoryTableViewCell.xib */; };
+		7C69838028FAEFB50037B44B /* SuccessfulReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69837E28FAEFB50037B44B /* SuccessfulReportViewController.swift */; };
+		7C69838128FAEFB50037B44B /* SuccessfulReportViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69837F28FAEFB50037B44B /* SuccessfulReportViewController.xib */; };
+		7C69838328FAEFC70037B44B /* SuccessfulReportCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69838228FAEFC70037B44B /* SuccessfulReportCoordinator.swift */; };
+		7C69838528FAEFD20037B44B /* SuccessfulReportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69838428FAEFD20037B44B /* SuccessfulReportViewModel.swift */; };
 		7C8896BD28F9EECA0031E5FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8896BC28F9EECA0031E5FB /* AppDelegate.swift */; };
 		7C8896C428F9EECA0031E5FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8896C228F9EECA0031E5FB /* Main.storyboard */; };
 		7C8896C628F9EECA0031E5FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8896C528F9EECA0031E5FB /* Assets.xcassets */; };
@@ -112,6 +124,18 @@
 		7C69835D28FAD9FA0037B44B /* ReportProblemViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReportProblemViewController.xib; sourceTree = "<group>"; };
 		7C69836028FAE7770037B44B /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		7C69836128FAE7770037B44B /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		7C69836428FAE9B90037B44B /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		7C69836B28FAEC9D0037B44B /* CategoriesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCoordinator.swift; sourceTree = "<group>"; };
+		7C69836D28FAECAB0037B44B /* CategoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewModel.swift; sourceTree = "<group>"; };
+		7C69836F28FAECD80037B44B /* CategorySetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorySetup.swift; sourceTree = "<group>"; };
+		7C69837128FAED3D0037B44B /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
+		7C69837228FAED3D0037B44B /* CategoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesViewController.xib; sourceTree = "<group>"; };
+		7C69837528FAED730037B44B /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		7C69837628FAED730037B44B /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
+		7C69837E28FAEFB50037B44B /* SuccessfulReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulReportViewController.swift; sourceTree = "<group>"; };
+		7C69837F28FAEFB50037B44B /* SuccessfulReportViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SuccessfulReportViewController.xib; sourceTree = "<group>"; };
+		7C69838228FAEFC70037B44B /* SuccessfulReportCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulReportCoordinator.swift; sourceTree = "<group>"; };
+		7C69838428FAEFD20037B44B /* SuccessfulReportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessfulReportViewModel.swift; sourceTree = "<group>"; };
 		7C8896B928F9EECA0031E5FB /* zeleniKljucHakaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zeleniKljucHakaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8896BC28F9EECA0031E5FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C8896C328F9EECA0031E5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -203,6 +227,30 @@
 			path = extensions;
 			sourceTree = "<group>";
 		};
+		7C69836628FAEC450037B44B /* SelectCategory */ = {
+			isa = PBXGroup;
+			children = (
+				7C69837228FAED3D0037B44B /* CategoriesViewController.xib */,
+				7C69837128FAED3D0037B44B /* CategoriesViewController.swift */,
+				7C69836D28FAECAB0037B44B /* CategoriesViewModel.swift */,
+				7C69836B28FAEC9D0037B44B /* CategoriesCoordinator.swift */,
+				7C69837528FAED730037B44B /* CategoryTableViewCell.swift */,
+				7C69837628FAED730037B44B /* CategoryTableViewCell.xib */,
+			);
+			path = SelectCategory;
+			sourceTree = "<group>";
+		};
+		7C69837928FAEF440037B44B /* SuccessfulSentReport */ = {
+			isa = PBXGroup;
+			children = (
+				7C69837F28FAEFB50037B44B /* SuccessfulReportViewController.xib */,
+				7C69837E28FAEFB50037B44B /* SuccessfulReportViewController.swift */,
+				7C69838428FAEFD20037B44B /* SuccessfulReportViewModel.swift */,
+				7C69838228FAEFC70037B44B /* SuccessfulReportCoordinator.swift */,
+			);
+			path = SuccessfulSentReport;
+			sourceTree = "<group>";
+		};
 		7C8896B028F9EEC90031E5FB = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +286,7 @@
 				7C8896C728F9EECA0031E5FB /* LaunchScreen.storyboard */,
 				7C8896EC28F9F1080031E5FB /* GoogleService-Info.plist */,
 				7C8896CA28F9EECA0031E5FB /* Info.plist */,
+				7C69836428FAE9B90037B44B /* CustomImageView.swift */,
 			);
 			path = zeleniKljucHakaton;
 			sourceTree = "<group>";
@@ -275,7 +324,8 @@
 		7C8896EF28F9F2FD0031E5FB /* ui */ = {
 			isa = PBXGroup;
 			children = (
-				7C88972928FA9B550031E5FB /* Models */,
+				7C69837928FAEF440037B44B /* SuccessfulSentReport */,
+				7C69836628FAEC450037B44B /* SelectCategory */,
 				7C88970528F9FA7E0031E5FB /* ReportProblem */,
 				7C88970428F9FA710031E5FB /* Contact */,
 				7C88970328F9FA680031E5FB /* Donations */,
@@ -283,6 +333,7 @@
 				7C88970128F9F64F0031E5FB /* News */,
 				7C8896EE28F9F1BF0031E5FB /* Home */,
 				7C8896FA28F9F5450031E5FB /* CustomTabBar */,
+				7C88972928FA9B550031E5FB /* Models */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -417,6 +468,7 @@
 				7C88974B28FAA0C90031E5FB /* News.swift */,
 				7C88974D28FAA0DC0031E5FB /* Partner.swift */,
 				7C88974F28FAA0EA0031E5FB /* PartnersScreenModel.swift */,
+				7C69836F28FAECD80037B44B /* CategorySetup.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -562,9 +614,12 @@
 			files = (
 				7C8896C928F9EECA0031E5FB /* LaunchScreen.storyboard in Resources */,
 				7C69833928FAC66E0037B44B /* PartnersViewController.xib in Resources */,
+				7C69837428FAED3D0037B44B /* CategoriesViewController.xib in Resources */,
 				7C69832C28FAC3CB0037B44B /* ContactViewController.xib in Resources */,
 				7C69833728FAC5470037B44B /* NewsCollectionViewCell.xib in Resources */,
 				7C8896ED28F9F1080031E5FB /* GoogleService-Info.plist in Resources */,
+				7C69838128FAEFB50037B44B /* SuccessfulReportViewController.xib in Resources */,
+				7C69837828FAED730037B44B /* CategoryTableViewCell.xib in Resources */,
 				7C69833F28FAC6FB0037B44B /* DonationsViewController.xib in Resources */,
 				7C69835F28FAD9FA0037B44B /* ReportProblemViewController.xib in Resources */,
 				7C8896C628F9EECA0031E5FB /* Assets.xcassets in Resources */,
@@ -639,16 +694,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C69838328FAEFC70037B44B /* SuccessfulReportCoordinator.swift in Sources */,
 				7C88974428FAA0840031E5FB /* CategoryModel.swift in Sources */,
 				7C88975028FAA0EA0031E5FB /* PartnersScreenModel.swift in Sources */,
 				7C69832B28FAC3CB0037B44B /* ContactViewController.swift in Sources */,
 				7C88972628FA9AAA0031E5FB /* NewsPorotocol.swift in Sources */,
 				7C88972B28FA9B6E0031E5FB /* ProblemReportModel.swift in Sources */,
+				7C69837328FAED3D0037B44B /* CategoriesViewController.swift in Sources */,
 				7C8896BD28F9EECA0031E5FB /* AppDelegate.swift in Sources */,
 				7C88970B28F9FAE70031E5FB /* NewsViewModel.swift in Sources */,
 				532844D028FAAAC5008695F3 /* ImagePicker.swift in Sources */,
 				7C88972228FA9A8B0031E5FB /* ContactDataProtocol.swift in Sources */,
 				7C88972028FA9A780031E5FB /* ProblemReportProtocol.swift in Sources */,
+				7C69837728FAED730037B44B /* CategoryTableViewCell.swift in Sources */,
 				7C88974E28FAA0DC0031E5FB /* Partner.swift in Sources */,
 				7C88974228FA9F930031E5FB /* ContactViewModel.swift in Sources */,
 				7C88971028F9FC160031E5FB /* PartnersViewController.swift in Sources */,
@@ -662,13 +720,18 @@
 				7C69833628FAC5470037B44B /* NewsCollectionViewCell.swift in Sources */,
 				7C88970D28F9FB030031E5FB /* NewsCoordinator.swift in Sources */,
 				7C69834B28FAD59F0037B44B /* ReportViewCoordinator.swift in Sources */,
+				7C69836E28FAECAB0037B44B /* CategoriesViewModel.swift in Sources */,
 				7C88973628FA9F300031E5FB /* DonationsViewModel.swift in Sources */,
 				7C88974628FAA0980031E5FB /* ContactScreenModel.swift in Sources */,
 				7C69836228FAE7770037B44B /* HomeCollectionViewCell.swift in Sources */,
 				7C88974A28FAA0B80031E5FB /* Link.swift in Sources */,
+				7C69836528FAE9B90037B44B /* CustomImageView.swift in Sources */,
+				7C69837028FAECD80037B44B /* CategorySetup.swift in Sources */,
+				7C69838028FAEFB50037B44B /* SuccessfulReportViewController.swift in Sources */,
 				7C88974C28FAA0C90031E5FB /* News.swift in Sources */,
 				7C69833228FAC5290037B44B /* NewsViewController.swift in Sources */,
 				7C88973028FA9BD60031E5FB /* FirebaseManager.swift in Sources */,
+				7C69836C28FAEC9D0037B44B /* CategoriesCoordinator.swift in Sources */,
 				7C8896FC28F9F5D00031E5FB /* TabBarViewControllerFactory.swift in Sources */,
 				7C8896F428F9F32B0031E5FB /* HomeViewController.swift in Sources */,
 				7C69835E28FAD9FA0037B44B /* ReportProblemViewController.swift in Sources */,
@@ -684,6 +747,7 @@
 				7C88971328F9FC2F0031E5FB /* PartnersViewModel.swift in Sources */,
 				7C8896FE28F9F5E00031E5FB /* NavigationTab.swift in Sources */,
 				532844D228FAAD6D008695F3 /* Coordinating.swift in Sources */,
+				7C69838528FAEFD20037B44B /* SuccessfulReportViewModel.swift in Sources */,
 				7C88972D28FA9BBF0031E5FB /* ManagerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

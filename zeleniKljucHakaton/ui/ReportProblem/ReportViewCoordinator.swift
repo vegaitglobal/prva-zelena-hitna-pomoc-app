@@ -36,13 +36,13 @@ class ReportCoordinator {
     }
     
     func continueToCategories() {
-//        let categoriesCoordinator = CategoriesCoordinator(presenter: presenter, manager: manager)
-//        categoriesCoordinator.start()
+        let categoriesCoordinator = CategoriesCoordinator(presenter: presenter, manager: manager)
+        categoriesCoordinator.start()
     }
 
     func continueToSuccesfulReport() {
-//        let succesfulReportCoordinator = SuccessfulReportCoordinator(presenter: presenter)
-//        succesfulReportCoordinator.start()
+        let succesfulReportCoordinator = SuccessfulReportCoordinator(presenter: presenter)
+        succesfulReportCoordinator.start()
     }
 
     func continueToMaps() {

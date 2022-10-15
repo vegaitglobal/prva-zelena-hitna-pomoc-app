@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuccessfulReportViewController" customModule="zeleniKljucHakaton" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6. Oktobar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="puh-Xk-khZ">
+                    <rect key="frame" x="25" y="49" width="364" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.67989784480000004" green="0.69577658180000002" blue="0.71055740119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Uspešno ste prijavili problem!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1a-Rr-Qwd">
+                    <rect key="frame" x="25" y="75" width="364" height="29"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Dd-uc-bbg">
+                    <rect key="frame" x="25" y="139" width="364" height="142.5"/>
+                    <string key="text">Vaša prijava je prosledjena zaduženoj instituciji. Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.23296272749999999" green="0.52554482219999998" blue="0.65403217079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="confirm" translatesAutoresizingMaskIntoConstraints="NO" id="huX-uP-fRr">
+                    <rect key="frame" x="35" y="331.5" width="344" height="250"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="w66-gr-DUg"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="5Dd-uc-bbg" secondAttribute="trailing" constant="25" id="DEb-Ce-J7m"/>
+                <constraint firstItem="T1a-Rr-Qwd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="W4E-ea-hN5"/>
+                <constraint firstItem="puh-Xk-khZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="ZLQ-Mm-KRC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="huX-uP-fRr" secondAttribute="trailing" constant="35" id="Ztn-N7-BF1"/>
+                <constraint firstItem="puh-Xk-khZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="5" id="hJx-yt-HSA"/>
+                <constraint firstItem="5Dd-uc-bbg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="25" id="hRp-dB-tpw"/>
+                <constraint firstItem="T1a-Rr-Qwd" firstAttribute="top" secondItem="puh-Xk-khZ" secondAttribute="bottom" constant="10" id="rVh-fN-t3N"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="puh-Xk-khZ" secondAttribute="trailing" constant="25" id="tLa-M9-39e"/>
+                <constraint firstItem="huX-uP-fRr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="35" id="ubg-Va-6NX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="T1a-Rr-Qwd" secondAttribute="trailing" constant="25" id="vEJ-Rz-OeS"/>
+                <constraint firstItem="5Dd-uc-bbg" firstAttribute="top" secondItem="T1a-Rr-Qwd" secondAttribute="bottom" constant="35" id="yn6-Jg-q5n"/>
+                <constraint firstItem="huX-uP-fRr" firstAttribute="top" secondItem="5Dd-uc-bbg" secondAttribute="bottom" constant="50" id="zxL-6F-E3D"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="95.758928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="confirm" width="238" height="207"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

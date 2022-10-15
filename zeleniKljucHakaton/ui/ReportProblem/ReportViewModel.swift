@@ -8,8 +8,8 @@
 import UIKit
 
 protocol ReportViewDelegate {
-//    func continueToCategories()
-//    func continueToSuccesfulReport()
+    func continueToCategories()
+    func continueToSuccesfulReport()
 //    func continueToMaps()
     func presentImagePicker()
 }
@@ -21,13 +21,13 @@ class ReportViewModel: ReportViewDelegate {
         self.coordinator = coordinator
     }
     
-//    func continueToCategories() {
-//        coordinator?.continueToCategories()
-//    }
-//
-//    func continueToSuccesfulReport() {
-//        coordinator?.continueToSuccesfulReport()
-//    }
+    func continueToCategories() {
+        coordinator?.continueToCategories()
+    }
+
+    func continueToSuccesfulReport() {
+        coordinator?.continueToSuccesfulReport()
+    }
 //
 //    func continueToMaps() {
 //        coordinator?.continueToMaps()

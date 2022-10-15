@@ -9,22 +9,57 @@ import UIKit
 
 protocol HomeViewDelegate {
     var viewDelegate: HomeViewControllerDelegating? { get set }
-    func presentImagePicker()
+    var categories: [CategoryModel]? { get set }
+    func continueToNews()
+    func continueToPartners()
+    func continueToDonations()
+    func continueToContact()
     func continueToReport()
+    func continueToMaps()
+    func continueToCategoriesScreen(model: CategoryModel)
+    func getNumberOfCategories() -> Int
+    func getCategoiresFromDb()
 }
 
-final class HomeViewModel: HomeViewDelegate {
+class HomeViewModel: HomeViewDelegate {
     weak var viewDelegate: HomeViewControllerDelegating?
-    private let coordinator: HomeCoordinator?
+    private var coordinator: HomeCoordinator?
+    var categories: [CategoryModel]? {
+        didSet {
+            viewDelegate?.reloadData()
+        }
+    }
     var requestManager: RepositoryModule
-
+    
     init (coordinator: HomeCoordinator, manager: RepositoryModule) {
         self.coordinator = coordinator
         self.requestManager = manager
     }
     
-    func presentImagePicker() {
-        coordinator?.presentImagePicker()
+    func getCategoiresFromDb() {
+        requestManager.getAllCategories()
+    }
+    
+    func getNumberOfCategories() -> Int {
+        let numberOfCategories = categories?.count ?? 0
+        return numberOfCategories
+        
+    }
+    
+    func continueToNews(){
+        coordinator?.continueToNews()
+    }
+    
+    func continueToPartners(){
+        coordinator?.continueToPartners()
+    }
+    
+    func continueToDonations(){
+        coordinator?.continueToDonations()
+    }
+    
+    func continueToContact(){
+        coordinator?.continueToContact()
     }
     
     func continueToReport() {
@@ -32,14 +67,16 @@ final class HomeViewModel: HomeViewDelegate {
               let navigation = viewController.navigationController else { return }
         coordinator?.continueToReport(navigation: navigation)
     }
-}
-
-extension HomeViewModel: ImagePickerDelegate {
-    func didSelect(image: UIImage?) {
-        // This is when image selected
+    
+    func continueToMaps() {
+        guard let viewController = viewDelegate as? HomeViewController,
+              let navigation = viewController.navigationController else { return }
+        coordinator?.continueToMaps(navigation: navigation)
     }
     
-    func didSelect(videoURL: URL?) {
-        // Put code here if video is selected
+    func continueToCategoriesScreen(model: CategoryModel) {
+        guard let viewController = viewDelegate as? HomeViewController,
+              let navigation = viewController.navigationController else { return }
+        coordinator?.continueToCategoriesScreen(navigation: navigation, model: model)
     }
 }
