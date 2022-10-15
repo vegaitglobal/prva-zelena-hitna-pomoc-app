@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		532844D028FAAAC5008695F3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532844CF28FAAAC5008695F3 /* ImagePicker.swift */; };
+		532844D228FAAD6D008695F3 /* Coordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532844D128FAAD6D008695F3 /* Coordinating.swift */; };
 		664D5AB2328B7F200D3E3EF6 /* Pods_zeleniKljucHakaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C41C581C5ED718D7E80FB5 /* Pods_zeleniKljucHakaton.framework */; };
 		7C8896BD28F9EECA0031E5FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8896BC28F9EECA0031E5FB /* AppDelegate.swift */; };
 		7C8896C428F9EECA0031E5FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8896C228F9EECA0031E5FB /* Main.storyboard */; };
@@ -78,6 +80,8 @@
 
 /* Begin PBXFileReference section */
 		0CC8CFB3DA4B25A7D10C4369 /* Pods-zeleniKljucHakaton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zeleniKljucHakaton.debug.xcconfig"; path = "Target Support Files/Pods-zeleniKljucHakaton/Pods-zeleniKljucHakaton.debug.xcconfig"; sourceTree = "<group>"; };
+		532844CF28FAAAC5008695F3 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		532844D128FAAD6D008695F3 /* Coordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinating.swift; sourceTree = "<group>"; };
 		654DD142DA2F0D8E7E45A348 /* Pods-zeleniKljucHakaton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zeleniKljucHakaton.release.xcconfig"; path = "Target Support Files/Pods-zeleniKljucHakaton/Pods-zeleniKljucHakaton.release.xcconfig"; sourceTree = "<group>"; };
 		7C8896B928F9EECA0031E5FB /* zeleniKljucHakaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zeleniKljucHakaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8896BC28F9EECA0031E5FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +165,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		532844CE28FAAAB0008695F3 /* Image Picker */ = {
+			isa = PBXGroup;
+			children = (
+				532844CF28FAAAC5008695F3 /* ImagePicker.swift */,
+			);
+			path = "Image Picker";
+			sourceTree = "<group>";
+		};
 		7C8896B028F9EEC90031E5FB = {
 			isa = PBXGroup;
 			children = (
@@ -325,6 +337,7 @@
 		7C88971828FA99CE0031E5FB /* protocols */ = {
 			isa = PBXGroup;
 			children = (
+				532844D128FAAD6D008695F3 /* Coordinating.swift */,
 				7C88971A28FA9A1A0031E5FB /* useCases */,
 				7C88971928FA9A120031E5FB /* repository */,
 			);
@@ -378,6 +391,7 @@
 		7C88973128FA9D140031E5FB /* libraries */ = {
 			isa = PBXGroup;
 			children = (
+				532844CE28FAAAB0008695F3 /* Image Picker */,
 			);
 			path = libraries;
 			sourceTree = "<group>";
@@ -587,6 +601,7 @@
 				7C88972B28FA9B6E0031E5FB /* ProblemReportModel.swift in Sources */,
 				7C8896BD28F9EECA0031E5FB /* AppDelegate.swift in Sources */,
 				7C88970B28F9FAE70031E5FB /* NewsViewModel.swift in Sources */,
+				532844D028FAAAC5008695F3 /* ImagePicker.swift in Sources */,
 				7C88972228FA9A8B0031E5FB /* ContactDataProtocol.swift in Sources */,
 				7C88972028FA9A780031E5FB /* ProblemReportProtocol.swift in Sources */,
 				7C88974E28FAA0DC0031E5FB /* Partner.swift in Sources */,
@@ -616,6 +631,7 @@
 				7C88971328F9FC2F0031E5FB /* PartnersViewModel.swift in Sources */,
 				7C8896FE28F9F5E00031E5FB /* NavigationTab.swift in Sources */,
 				7C88970828F9FAAE0031E5FB /* NewsViewController.swift in Sources */,
+				532844D228FAAD6D008695F3 /* Coordinating.swift in Sources */,
 				7C88972D28FA9BBF0031E5FB /* ManagerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

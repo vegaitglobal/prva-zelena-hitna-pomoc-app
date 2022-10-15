@@ -10,7 +10,7 @@ import UIKit
 protocol HomeViewControllerDelegating: AnyObject {
 }
 
-class HomeViewController: UIViewController, UITabBarControllerDelegate, UITabBarDelegate, HomeViewControllerDelegating {
+final class HomeViewController: UIViewController, UITabBarControllerDelegate, UITabBarDelegate, HomeViewControllerDelegating {
     var viewModel: HomeViewDelegate
     
     init(viewModel: HomeViewDelegate) {
@@ -25,5 +25,9 @@ class HomeViewController: UIViewController, UITabBarControllerDelegate, UITabBar
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    @IBAction func handleImageSelectTap(_ sender: Any) {
+        viewModel.presentImagePicker()
     }
 }
