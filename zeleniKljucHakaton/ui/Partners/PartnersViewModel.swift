@@ -9,13 +9,31 @@ import UIKit
 
 protocol PartnersViewDelegate {
     var partnerScreenInfos: PartnersScreenModel? { get set }
+    var delegate: PartnersDelegating? { get set }
+    func numberOfCells() -> Int
+    func getPartnersDetails()
 }
 
 class PartnersViewModel: PartnersViewDelegate {
     private var coordinator: PartnersCoordinator?
-    var partnerScreenInfos: PartnersScreenModel?
+    var requestManager: RepositoryModule
+    var delegate: PartnersDelegating?
+    var partnerScreenInfos: PartnersScreenModel? {
+        didSet {
+            delegate?.reloadData()
+        }
+    }
     
-    init (coordinator: PartnersCoordinator) {
+    init (coordinator: PartnersCoordinator, manager: RepositoryModule) {
         self.coordinator = coordinator
+        self.requestManager = manager
+    }
+    
+    func numberOfCells() -> Int {
+        partnerScreenInfos?.listOfPartners.count ?? 0
+    }
+    
+    func getPartnersDetails() {
+        requestManager.getPartnerDetails()
     }
 }

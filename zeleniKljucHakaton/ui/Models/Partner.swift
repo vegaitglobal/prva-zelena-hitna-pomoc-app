@@ -8,8 +8,8 @@
 import Foundation
 
 struct Partner: Codable  {
-    let id: String
-    let name: String
-    let city: String
-    let url: String
+    let id: String?
+    let name: String?
+    let city: String?
+    let url: String?
 }

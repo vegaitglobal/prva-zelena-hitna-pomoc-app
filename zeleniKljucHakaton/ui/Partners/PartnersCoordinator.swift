@@ -17,13 +17,13 @@ class PartnersCoordinator {
     }
     
     func start() {
-        let partnersViewDelegate = PartnersViewModel(coordinator: self)
+        let partnersViewDelegate = PartnersViewModel(coordinator: self, manager: manager)
         let partnersViewController = PartnersViewController(viewModel: partnersViewDelegate)
         presenter.pushViewController(partnersViewController, animated: false)
     }
     
     func createViewController() -> UIViewController {
-        let partnersViewDelegate = PartnersViewModel(coordinator: self)
+        let partnersViewDelegate = PartnersViewModel(coordinator: self, manager: manager)
         let partnersViewController = PartnersViewController(viewModel: partnersViewDelegate)
         return partnersViewController
     }

@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PartnersCollectionViewCell" customModule="greenKeyApp" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="PartnersCollectionViewCell" customModule="zeleniKljucHakaton" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="460" height="126"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -17,22 +17,22 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IjW-bS-uJW">
-                        <rect key="frame" x="90" y="15" width="365" height="96"/>
+                        <rect key="frame" x="90" y="15" width="369.5" height="96"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzP-Jv-1RX">
-                                <rect key="frame" x="164" y="0.0" width="37.5" height="21"/>
+                                <rect key="frame" x="166" y="12" width="37.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ime partnera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrT-JJ-Gyg">
-                                <rect key="frame" x="130.5" y="26" width="104.5" height="21"/>
+                                <rect key="frame" x="132.5" y="38" width="104.5" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJi-tN-OWF">
-                                <rect key="frame" x="315" y="60" width="45" height="31"/>
+                                <rect key="frame" x="319.5" y="60" width="45" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="zVA-1Z-ji5"/>
                                 </constraints>
@@ -43,7 +43,7 @@
                         </subviews>
                         <color key="backgroundColor" red="0.98157619201030921" green="0.98157619201030921" blue="0.98157619201030921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="DzP-Jv-1RX" firstAttribute="top" secondItem="IjW-bS-uJW" secondAttribute="top" id="5k0-HH-hxN"/>
+                            <constraint firstItem="DzP-Jv-1RX" firstAttribute="top" secondItem="IjW-bS-uJW" secondAttribute="top" constant="12" id="5k0-HH-hxN"/>
                             <constraint firstItem="VrT-JJ-Gyg" firstAttribute="centerX" secondItem="IjW-bS-uJW" secondAttribute="centerX" id="9RT-QD-o8I"/>
                             <constraint firstAttribute="trailing" secondItem="KJi-tN-OWF" secondAttribute="trailing" constant="5" id="Bv8-Or-zqf"/>
                             <constraint firstItem="DzP-Jv-1RX" firstAttribute="centerX" secondItem="IjW-bS-uJW" secondAttribute="centerX" id="NWs-Ij-eWg"/>
@@ -56,7 +56,7 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="68e-SX-iqL">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="68e-SX-iqL" customClass="CachedImageView" customModule="zeleniKljucHakaton" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="5" width="110" height="116"/>
                         <color key="backgroundColor" red="0.67989784480000004" green="0.69577658180000002" blue="0.71055740119999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -68,26 +68,25 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LOGO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BeF-fz-MRX">
-                        <rect key="frame" x="33" y="53" width="47" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <constraints>
                 <constraint firstItem="68e-SX-iqL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="6Ji-lk-JxF"/>
                 <constraint firstItem="68e-SX-iqL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BXD-JY-7oP"/>
-                <constraint firstAttribute="trailing" secondItem="IjW-bS-uJW" secondAttribute="trailing" constant="5" id="FxS-BT-y5Z"/>
+                <constraint firstAttribute="trailing" secondItem="IjW-bS-uJW" secondAttribute="trailing" constant="0.69999999999999996" id="FxS-BT-y5Z"/>
                 <constraint firstAttribute="bottom" secondItem="68e-SX-iqL" secondAttribute="bottom" constant="5" id="Igq-BU-RPc"/>
                 <constraint firstItem="IjW-bS-uJW" firstAttribute="leading" secondItem="68e-SX-iqL" secondAttribute="trailing" constant="-20" id="QIl-hb-dle"/>
                 <constraint firstItem="IjW-bS-uJW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="XBE-1h-nAg"/>
                 <constraint firstAttribute="bottom" secondItem="IjW-bS-uJW" secondAttribute="bottom" constant="15" id="XQG-yq-7uq"/>
             </constraints>
             <size key="customSize" width="460" height="126"/>
+            <connections>
+                <outlet property="boxView" destination="IjW-bS-uJW" id="oaj-DN-eYA"/>
+                <outlet property="city" destination="DzP-Jv-1RX" id="skR-Un-lPS"/>
+                <outlet property="name" destination="VrT-JJ-Gyg" id="Er2-qI-srI"/>
+                <outlet property="partnerLogo" destination="68e-SX-iqL" id="ve7-zv-Ztj"/>
+            </connections>
             <point key="canvasLocation" x="428.98550724637687" y="137.27678571428569"/>
         </collectionViewCell>
     </objects>

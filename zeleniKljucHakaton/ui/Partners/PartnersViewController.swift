@@ -6,8 +6,11 @@
 //
 
 import UIKit
+protocol PartnersDelegating {
+    func reloadData()
+}
 
-class PartnersViewController: UIViewController {
+class PartnersViewController: UIViewController, PartnersDelegating {
     var viewModel: PartnersViewDelegate
     @IBOutlet weak var collectionView: UICollectionView!
     
@@ -20,11 +23,17 @@ class PartnersViewController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.delegate = self
         collectionView.register(UINib(nibName: "PartnersCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "Cell")
         collectionView.delegate = self
         collectionView.dataSource = self
+        viewModel.getPartnersDetails()
         NotificationCenter.default.addObserver(self, selector: #selector(getPartnersInfo), name: Notification.Name.partners, object: nil)
     }
     
@@ -36,6 +45,13 @@ class PartnersViewController: UIViewController {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBar.isHidden = false
     }
+    
+    func reloadData() {
+        DispatchQueue.main.async { [weak self] in
+            guard let self = self else { return }
+            self.collectionView.reloadData()
+        }
+    }
 }
 
 extension PartnersViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
@@ -45,13 +61,15 @@ extension PartnersViewController: UICollectionViewDelegate, UICollectionViewData
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as? PartnersCollectionViewCell {
+            guard let partnerModel = viewModel.partnerScreenInfos?.listOfPartners[indexPath.item] else { return cell }
+            cell.cellSetup(partnerModel: partnerModel)
             return cell
         }
         return UICollectionViewCell()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        5
+        viewModel.numberOfCells()
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
