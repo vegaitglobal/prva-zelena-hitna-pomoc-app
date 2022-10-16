@@ -9,7 +9,6 @@ import UIKit
 
 class NewsDetailsViewController: UIViewController{
     var viewModel: NewsDetailsViewDelegate
-//    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var newsDate: UILabel!
     @IBOutlet weak var newsTitle: UILabel!
     @IBOutlet weak var newsImage: CachedImageView!

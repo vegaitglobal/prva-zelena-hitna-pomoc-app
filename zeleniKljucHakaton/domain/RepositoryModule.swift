@@ -36,5 +36,9 @@ class RepositoryModule: RepositoryModuleProtocol {
     func getContactInformations() {
         manager.getContactInformations()
     }
+    
+    func getWaisteDisposalInformations() {
+        manager.getWaisteDisposalInformations()
+    }
 }
 

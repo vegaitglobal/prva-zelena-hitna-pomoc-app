@@ -28,7 +28,6 @@ class NewsViewModel: NewsViewDelegate {
     init (coordinator: NewsCoordinator, manager: RepositoryModule) {
         self.coordinator = coordinator
         self.requestManager = manager
-//        self.getNewsFromDb()
     }
     
     func getNewsFromDb() {

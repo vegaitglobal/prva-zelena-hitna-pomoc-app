@@ -51,6 +51,14 @@
 		7C69839B28FAF6BD0037B44B /* NewsDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69839A28FAF6BD0037B44B /* NewsDetailsViewModel.swift */; };
 		7C69839F28FB279D0037B44B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69839D28FB279D0037B44B /* HomeViewController.swift */; };
 		7C6983A028FB279D0037B44B /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69839E28FB279D0037B44B /* HomeViewController.xib */; };
+		7C6983A428FBF9E20037B44B /* WasteDisposalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6983A228FBF9E20037B44B /* WasteDisposalViewController.swift */; };
+		7C6983A528FBF9E20037B44B /* WasteDisposalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C6983A328FBF9E20037B44B /* WasteDisposalViewController.xib */; };
+		7C6983A728FBF9FA0037B44B /* WasteDisposalCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6983A628FBF9FA0037B44B /* WasteDisposalCoordinator.swift */; };
+		7C6983A928FBFA0B0037B44B /* WasteDisposalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6983A828FBFA0B0037B44B /* WasteDisposalViewModel.swift */; };
+		7C6983AB28FBFA270037B44B /* WasteDisposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6983AA28FBFA270037B44B /* WasteDisposal.swift */; };
+		7C6983AD28FBFA700037B44B /* WasteDesposalLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6983AC28FBFA700037B44B /* WasteDesposalLocation.swift */; };
+		7C6983B028FBFB4E0037B44B /* WasteDisposalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6983AE28FBFB4E0037B44B /* WasteDisposalTableViewCell.swift */; };
+		7C6983B128FBFB4E0037B44B /* WasteDisposalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C6983AF28FBFB4E0037B44B /* WasteDisposalTableViewCell.xib */; };
 		7C8896BD28F9EECA0031E5FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8896BC28F9EECA0031E5FB /* AppDelegate.swift */; };
 		7C8896C428F9EECA0031E5FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C8896C228F9EECA0031E5FB /* Main.storyboard */; };
 		7C8896C628F9EECA0031E5FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C8896C528F9EECA0031E5FB /* Assets.xcassets */; };
@@ -157,6 +165,14 @@
 		7C69839A28FAF6BD0037B44B /* NewsDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDetailsViewModel.swift; sourceTree = "<group>"; };
 		7C69839D28FB279D0037B44B /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		7C69839E28FB279D0037B44B /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		7C6983A228FBF9E20037B44B /* WasteDisposalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteDisposalViewController.swift; sourceTree = "<group>"; };
+		7C6983A328FBF9E20037B44B /* WasteDisposalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WasteDisposalViewController.xib; sourceTree = "<group>"; };
+		7C6983A628FBF9FA0037B44B /* WasteDisposalCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteDisposalCoordinator.swift; sourceTree = "<group>"; };
+		7C6983A828FBFA0B0037B44B /* WasteDisposalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteDisposalViewModel.swift; sourceTree = "<group>"; };
+		7C6983AA28FBFA270037B44B /* WasteDisposal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteDisposal.swift; sourceTree = "<group>"; };
+		7C6983AC28FBFA700037B44B /* WasteDesposalLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteDesposalLocation.swift; sourceTree = "<group>"; };
+		7C6983AE28FBFB4E0037B44B /* WasteDisposalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteDisposalTableViewCell.swift; sourceTree = "<group>"; };
+		7C6983AF28FBFB4E0037B44B /* WasteDisposalTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WasteDisposalTableViewCell.xib; sourceTree = "<group>"; };
 		7C8896B928F9EECA0031E5FB /* zeleniKljucHakaton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = zeleniKljucHakaton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C8896BC28F9EECA0031E5FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7C8896C328F9EECA0031E5FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -276,8 +292,8 @@
 			children = (
 				7C69838828FAF2770037B44B /* CategoriesInformationsViewController.xib */,
 				7C69838728FAF2770037B44B /* CategoriesInformationsViewController.swift */,
-				7C69838B28FAF2880037B44B /* CategoriesInformationsCoordinator.swift */,
 				7C69838D28FAF2960037B44B /* CategoriesInformationsViewModel.swift */,
+				7C69838B28FAF2880037B44B /* CategoriesInformationsCoordinator.swift */,
 				7C69838F28FAF3020037B44B /* CategoriesInformationsTableViewCell.swift */,
 				7C69839028FAF3020037B44B /* CategoriesInformationsTableViewCell.xib */,
 			);
@@ -293,6 +309,19 @@
 				7C69839828FAF6AF0037B44B /* NewsDetailsCoordinator.swift */,
 			);
 			path = NewsDetails;
+			sourceTree = "<group>";
+		};
+		7C6983A128FBF98C0037B44B /* WasteDisposal */ = {
+			isa = PBXGroup;
+			children = (
+				7C6983A328FBF9E20037B44B /* WasteDisposalViewController.xib */,
+				7C6983A228FBF9E20037B44B /* WasteDisposalViewController.swift */,
+				7C6983A828FBFA0B0037B44B /* WasteDisposalViewModel.swift */,
+				7C6983A628FBF9FA0037B44B /* WasteDisposalCoordinator.swift */,
+				7C6983AE28FBFB4E0037B44B /* WasteDisposalTableViewCell.swift */,
+				7C6983AF28FBFB4E0037B44B /* WasteDisposalTableViewCell.xib */,
+			);
+			path = WasteDisposal;
 			sourceTree = "<group>";
 		};
 		7C8896B028F9EEC90031E5FB = {
@@ -367,6 +396,7 @@
 		7C8896EF28F9F2FD0031E5FB /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				7C6983A128FBF98C0037B44B /* WasteDisposal */,
 				7C69838628FAF21C0037B44B /* CategoriesInformations */,
 				7C69837928FAEF440037B44B /* SuccessfulSentReport */,
 				7C69836628FAEC450037B44B /* SelectCategory */,
@@ -505,6 +535,8 @@
 		7C88972928FA9B550031E5FB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7C6983AC28FBFA700037B44B /* WasteDesposalLocation.swift */,
+				7C6983AA28FBFA270037B44B /* WasteDisposal.swift */,
 				7C88972A28FA9B6E0031E5FB /* ProblemReportModel.swift */,
 				7C88974328FAA0840031E5FB /* CategoryModel.swift */,
 				7C88974528FAA0980031E5FB /* ContactScreenModel.swift */,
@@ -668,12 +700,14 @@
 				7C69838128FAEFB50037B44B /* SuccessfulReportViewController.xib in Resources */,
 				7C69837828FAED730037B44B /* CategoryTableViewCell.xib in Resources */,
 				7C69833F28FAC6FB0037B44B /* DonationsViewController.xib in Resources */,
+				7C6983A528FBF9E20037B44B /* WasteDisposalViewController.xib in Resources */,
 				7C69835F28FAD9FA0037B44B /* ReportProblemViewController.xib in Resources */,
 				7C8896C628F9EECA0031E5FB /* Assets.xcassets in Resources */,
 				7C6983A028FB279D0037B44B /* HomeViewController.xib in Resources */,
 				7C69833D28FAC6760037B44B /* PartnersCollectionViewCell.xib in Resources */,
 				7C69839228FAF3020037B44B /* CategoriesInformationsTableViewCell.xib in Resources */,
 				7C8896C428F9EECA0031E5FB /* Main.storyboard in Resources */,
+				7C6983B128FBFB4E0037B44B /* WasteDisposalTableViewCell.xib in Resources */,
 				7C69833328FAC5290037B44B /* NewsViewController.xib in Resources */,
 				7C69836328FAE7770037B44B /* HomeCollectionViewCell.xib in Resources */,
 				7C69838A28FAF2770037B44B /* CategoriesInformationsViewController.xib in Resources */,
@@ -743,6 +777,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C6983A728FBF9FA0037B44B /* WasteDisposalCoordinator.swift in Sources */,
 				7C69839628FAF6940037B44B /* NewsDetailsViewController.swift in Sources */,
 				7C69838328FAEFC70037B44B /* SuccessfulReportCoordinator.swift in Sources */,
 				7C88974428FAA0840031E5FB /* CategoryModel.swift in Sources */,
@@ -754,9 +789,11 @@
 				7C69839B28FAF6BD0037B44B /* NewsDetailsViewModel.swift in Sources */,
 				7C8896BD28F9EECA0031E5FB /* AppDelegate.swift in Sources */,
 				7C88970B28F9FAE70031E5FB /* NewsViewModel.swift in Sources */,
+				7C6983A428FBF9E20037B44B /* WasteDisposalViewController.swift in Sources */,
 				532844D028FAAAC5008695F3 /* ImagePicker.swift in Sources */,
 				7C88972228FA9A8B0031E5FB /* ContactDataProtocol.swift in Sources */,
 				7C88972028FA9A780031E5FB /* ProblemReportProtocol.swift in Sources */,
+				7C6983AD28FBFA700037B44B /* WasteDesposalLocation.swift in Sources */,
 				7C69839928FAF6AF0037B44B /* NewsDetailsCoordinator.swift in Sources */,
 				7C69837728FAED730037B44B /* CategoryTableViewCell.swift in Sources */,
 				7C88974E28FAA0DC0031E5FB /* Partner.swift in Sources */,
@@ -796,6 +833,7 @@
 				7C88971C28FA9A330031E5FB /* RepositoryModuleProtocol.swift in Sources */,
 				7C69838E28FAF2960037B44B /* CategoriesInformationsViewModel.swift in Sources */,
 				7C88974828FAA0AD0031E5FB /* DonationsScreenModel.swift in Sources */,
+				7C6983AB28FBFA270037B44B /* WasteDisposal.swift in Sources */,
 				7C88971E28FA9A640031E5FB /* CategoriesProtocol.swift in Sources */,
 				7C88973928FA9F4E0031E5FB /* DonationsViewController.swift in Sources */,
 				7C88970028F9F6100031E5FB /* TabBarNavigationController.swift in Sources */,
@@ -803,7 +841,9 @@
 				7C88971328F9FC2F0031E5FB /* PartnersViewModel.swift in Sources */,
 				7C8896FE28F9F5E00031E5FB /* NavigationTab.swift in Sources */,
 				532844D228FAAD6D008695F3 /* Coordinating.swift in Sources */,
+				7C6983A928FBFA0B0037B44B /* WasteDisposalViewModel.swift in Sources */,
 				7C69838528FAEFD20037B44B /* SuccessfulReportViewModel.swift in Sources */,
+				7C6983B028FBFB4E0037B44B /* WasteDisposalTableViewCell.swift in Sources */,
 				7C88972D28FA9BBF0031E5FB /* ManagerProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

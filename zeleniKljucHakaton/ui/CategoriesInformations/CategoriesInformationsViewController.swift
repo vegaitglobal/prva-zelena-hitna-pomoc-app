@@ -65,7 +65,8 @@ extension CategoriesInformationsViewController: UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoriesInformationsTableViewCell", for: indexPath) as? CategoriesInformationsTableViewCell {
-//            cell.categoryItem.text = data[indexPath.section]
+            guard let link = viewModel.model.subcategories?[indexPath.section] else { return cell }
+            cell.cellSetUp(linkModel: link)
             return cell
         }
         return UITableViewCell()

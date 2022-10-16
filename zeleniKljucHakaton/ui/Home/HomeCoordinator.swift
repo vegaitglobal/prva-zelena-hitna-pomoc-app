@@ -53,9 +53,9 @@ class HomeCoordinator {
         reportCoordinator.start()
     }
     
-    func continueToMaps(navigation: UINavigationController) {
-//        let mapsCoordinator = MapsCoordinator(presenter: navigation)
-//        mapsCoordinator.start()
+    func continueToWasteDisposal(navigation: UINavigationController) {
+        let wasteDisposalCoordinator = WasteDisposalCoordinator(presenter: navigation, manager: manager)
+        wasteDisposalCoordinator.start()
     }
     
     func continueToCategoriesScreen(navigation: UINavigationController, model: CategoryModel) {

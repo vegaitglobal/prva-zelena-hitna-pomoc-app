@@ -56,4 +56,12 @@ final class FirebaseManager: ManagerProtocol {
             NotificationCenter.default.post(name: Notification.Name.contact, object: contactInfo)
         })
     }
+    
+    func getWaisteDisposalInformations() {
+        databaseRef.child("Waste Disposal").observeSingleEvent(of: .value, with: { snapshot in
+            guard let data = try? JSONSerialization.data(withJSONObject: snapshot.value as Any, options: []) else { return }
+            let wasteDisposalInfo = try? JSONDecoder().decode(WasteDisposal.self, from: data)
+            NotificationCenter.default.post(name: Notification.Name.waisteDisposal, object: wasteDisposalInfo)
+        })
+    }
 }

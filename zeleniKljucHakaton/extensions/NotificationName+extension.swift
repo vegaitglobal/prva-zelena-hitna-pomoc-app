@@ -15,4 +15,5 @@ extension Notification.Name {
     static let partners = Notification.Name("Partners")
     static let donations = Notification.Name("Ponations")
     static let contact = Notification.Name("Contact")
+    static let waisteDisposal = Notification.Name("Waiste Disposal")
 }

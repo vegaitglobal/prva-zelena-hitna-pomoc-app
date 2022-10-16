@@ -14,4 +14,5 @@ protocol ManagerProtocol {
     func getAllNews()
     func getDonationsData()
     func getContactInformations()
+    func getWaisteDisposalInformations()
 }

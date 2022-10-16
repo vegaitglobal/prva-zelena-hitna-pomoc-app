@@ -71,7 +71,7 @@ class HomeViewModel: HomeViewDelegate {
     func continueToMaps() {
         guard let viewController = viewDelegate as? HomeViewController,
               let navigation = viewController.navigationController else { return }
-        coordinator?.continueToMaps(navigation: navigation)
+        coordinator?.continueToWasteDisposal(navigation: navigation)
     }
     
     func continueToCategoriesScreen(model: CategoryModel) {
