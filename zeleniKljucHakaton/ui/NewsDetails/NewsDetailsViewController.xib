@@ -26,7 +26,7 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAk-MQ-agS">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="961"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="968"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChW-9l-ESr">
                                     <rect key="frame" x="25" y="8" width="364" height="17"/>
@@ -41,13 +41,18 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZJY-po-gxx" customClass="CachedImageView" customModule="zeleniKljucHakaton" customModuleProvider="target">
-                                    <rect key="frame" x="25" y="82" width="364" height="260"/>
+                                    <rect key="frame" x="25" y="79" width="364" height="260"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="260" id="ngf-cT-Q4U"/>
                                     </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="10"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9B-RR-UCS">
-                                    <rect key="frame" x="25" y="352" width="364" height="609"/>
+                                    <rect key="frame" x="25" y="359" width="364" height="609"/>
                                     <mutableString key="text">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</mutableString>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
@@ -60,13 +65,13 @@
                                 <constraint firstItem="ChW-9l-ESr" firstAttribute="top" secondItem="gAk-MQ-agS" secondAttribute="top" constant="8" id="43e-1k-uPn"/>
                                 <constraint firstItem="ZJY-po-gxx" firstAttribute="leading" secondItem="gAk-MQ-agS" secondAttribute="leading" constant="25" id="HH1-ri-XvC"/>
                                 <constraint firstItem="h4J-wW-VGj" firstAttribute="top" secondItem="ChW-9l-ESr" secondAttribute="bottom" constant="8" id="Ibo-Tr-1gP"/>
-                                <constraint firstItem="S9B-RR-UCS" firstAttribute="top" secondItem="ZJY-po-gxx" secondAttribute="bottom" constant="10" id="QbQ-fx-7wR"/>
+                                <constraint firstItem="S9B-RR-UCS" firstAttribute="top" secondItem="ZJY-po-gxx" secondAttribute="bottom" constant="20" id="QbQ-fx-7wR"/>
                                 <constraint firstAttribute="trailing" secondItem="ChW-9l-ESr" secondAttribute="trailing" constant="25" id="Ufm-dL-WQZ"/>
                                 <constraint firstItem="h4J-wW-VGj" firstAttribute="leading" secondItem="gAk-MQ-agS" secondAttribute="leading" constant="25" id="ZMw-vE-bNA"/>
                                 <constraint firstItem="S9B-RR-UCS" firstAttribute="leading" secondItem="gAk-MQ-agS" secondAttribute="leading" constant="25" id="bcu-Yt-Gig"/>
                                 <constraint firstAttribute="bottom" secondItem="S9B-RR-UCS" secondAttribute="bottom" id="kdy-6p-Ahw"/>
                                 <constraint firstItem="ChW-9l-ESr" firstAttribute="leading" secondItem="gAk-MQ-agS" secondAttribute="leading" constant="25" id="qI3-Z3-jeW"/>
-                                <constraint firstItem="ZJY-po-gxx" firstAttribute="top" secondItem="h4J-wW-VGj" secondAttribute="bottom" constant="20" id="rEj-8H-IfG"/>
+                                <constraint firstItem="ZJY-po-gxx" firstAttribute="top" secondItem="h4J-wW-VGj" secondAttribute="bottom" constant="17" id="rEj-8H-IfG"/>
                                 <constraint firstAttribute="trailing" secondItem="h4J-wW-VGj" secondAttribute="trailing" constant="25" id="vDo-tl-G98"/>
                                 <constraint firstAttribute="trailing" secondItem="ZJY-po-gxx" secondAttribute="trailing" constant="25" id="x4w-vF-L4Z"/>
                             </constraints>

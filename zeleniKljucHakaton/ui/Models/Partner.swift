@@ -10,6 +10,7 @@ import Foundation
 struct Partner: Codable  {
     let id: String?
     let name: String?
+    let logo: String?
     let city: String?
     let url: String?
 }

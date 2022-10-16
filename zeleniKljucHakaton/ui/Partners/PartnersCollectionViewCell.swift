@@ -13,6 +13,7 @@ class PartnersCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var city: UILabel!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var boxView: UIView!
+    var partnerURL: String?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -31,10 +32,17 @@ class PartnersCollectionViewCell: UICollectionViewCell {
     }
     
     func cellSetup(partnerModel: Partner) {
+        partnerURL = partnerModel.url
         city.text = partnerModel.city
         name.text = partnerModel.name
-        guard let imageURL = partnerModel.url else { return }
+        guard let imageURL = partnerModel.logo else { return }
         partnerLogo.loadImage(imageURL)
     }
 
+    @IBAction func buttonPressed(_ sender: Any) {
+            guard let url = partnerURL else {return}
+            if URL(string: url) != nil {
+                UIApplication.shared.open(URL(string: url)! as URL)
+            }
+    }
 }
