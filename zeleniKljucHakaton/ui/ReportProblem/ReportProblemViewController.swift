@@ -9,6 +9,7 @@ import UIKit
 
 protocol ReportViewControllerDelegating: AnyObject {
     func updateLocation(with address: String)
+    func updateImages()
 }
 
 final class ReportViewController: UIViewController, ReportViewControllerDelegating, UITextViewDelegate, UITextFieldDelegate {
@@ -26,6 +27,7 @@ final class ReportViewController: UIViewController, ReportViewControllerDelegati
     @IBOutlet weak var categoryButton: UIButton!
     static let myNotification = Notification.Name("startGame")
     var viewModel: ReportViewDelegate
+    var galleryController: GalleryViewController!
     
     init(viewModel: ReportViewDelegate) {
         self.viewModel = viewModel
@@ -62,10 +64,15 @@ final class ReportViewController: UIViewController, ReportViewControllerDelegati
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
-        let galleryCoordinator = GalleryCoordinator(presenter: navigationController!).createViewController()
-        addToview(to: galleryView, child: galleryCoordinator)
-//        let galleryViewModel = GalleryViewModel(coordinator: GalleryCoordinating)
-//        add(GalleryViewController(viewModel: galleryViewModel))
+        if let galleryController = GalleryCoordinator(presenter: navigationController!).createViewController() as? GalleryViewController {
+            self.galleryController = galleryController
+            galleryController.images = viewModel.images
+            addToview(to: galleryView, child: galleryController)
+        }
+    }
+    
+    func updateImages() {
+        galleryController.images = viewModel.images
     }
     
     @IBAction func handleImageSelectTap(_ sender: Any) {

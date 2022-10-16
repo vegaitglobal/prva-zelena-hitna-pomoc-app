@@ -13,6 +13,8 @@ final class GalleryCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        picture.layer.cornerRadius = 6
+        picture.clipsToBounds = true
     }
     
     func setup(with image: UIImage) {

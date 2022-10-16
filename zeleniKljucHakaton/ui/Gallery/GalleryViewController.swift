@@ -14,6 +14,14 @@ final class GalleryViewController: UIViewController, GalleryViewControllerDelega
     @IBOutlet weak var collectionView: UICollectionView!
     
     private var viewModel: GalleryViewModeling
+    var images: [UIImage]  = [UIImage]() {
+        didSet {
+            DispatchQueue.main.async { [weak self] in
+                guard let self = self else { return }
+                self.collectionView.reloadData()
+            }
+        }
+    }
     
     init(viewModel: GalleryViewModeling) {
         self.viewModel = viewModel
@@ -25,7 +33,7 @@ final class GalleryViewController: UIViewController, GalleryViewControllerDelega
         super.viewDidLoad()
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.register(GalleryCell.self, forCellWithReuseIdentifier: GalleryCell.identifier)
+        collectionView.register(UINib(nibName: "GalleryCell", bundle: nil), forCellWithReuseIdentifier: GalleryCell.identifier)
     }
     
     required init?(coder: NSCoder) {
@@ -34,12 +42,11 @@ final class GalleryViewController: UIViewController, GalleryViewControllerDelega
 }
 
 extension GalleryViewController: UICollectionViewDelegate {
-    
 }
 
 extension GalleryViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        10
+        images.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -47,11 +54,14 @@ extension GalleryViewController: UICollectionViewDataSource {
             return UICollectionViewCell()
         }
         
-        cell.setup(with: UIImage(named: "confirm")!)
+        cell.setup(with: images[indexPath.row])
         return cell
     }
 }
 
 extension GalleryViewController: UICollectionViewDelegateFlowLayout {
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let dimension: CGFloat = collectionView.frame.height
+        return CGSize(width: dimension, height: dimension)
+    }
 }

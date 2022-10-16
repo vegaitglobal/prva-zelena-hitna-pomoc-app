@@ -10,12 +10,12 @@ import UIKit
 
 protocol ReportViewDelegate {
     var selectedCategory: String { get set }
+    var images: [UIImage] { get set }
     var viewDelegate: ReportViewControllerDelegating? { get set }
     func continueToCategories()
     func presentImagePicker()
     func showError(with message: String)
     func submitReport(with model: ProblemReportModel)
-    
 }
 
 final class ReportViewModel: NSObject, ReportViewDelegate {
@@ -24,7 +24,7 @@ final class ReportViewModel: NSObject, ReportViewDelegate {
     private var locationManager:CLLocationManager!
     private var requestManager: RepositoryModule!
     var selectedCategory: String = ""
-    private var images = [UIImage]()
+    var images = [UIImage]()
     
     init (coordinator: ReportCoordinator, manager: RepositoryModule) {
         super.init()
@@ -62,6 +62,7 @@ extension ReportViewModel: ImagePickerDelegate {
     func didSelect(image: UIImage?) {
         guard let image = image else { return }
         images.append(image)
+        viewDelegate?.updateImages()
     }
     
     func didSelect(videoURL: URL?) {
