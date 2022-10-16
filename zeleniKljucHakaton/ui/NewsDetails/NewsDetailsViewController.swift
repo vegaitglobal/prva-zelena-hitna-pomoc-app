@@ -26,7 +26,6 @@ class NewsDetailsViewController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        scrollView.delegate = self
         newsDate.text = viewModel.news.date
         newsTitle.text = viewModel.news.title
         newsDescription.text = viewModel.news.description

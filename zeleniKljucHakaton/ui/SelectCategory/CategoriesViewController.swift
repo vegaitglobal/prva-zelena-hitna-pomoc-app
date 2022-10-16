@@ -16,12 +16,12 @@ class CategoriesViewController: UIViewController {
     weak var delegate: selectedCategoryProtocol?
     
     @IBOutlet weak var tableView: UITableView!
-    let logos = [UIImage(named: "Icon metro-air"),
-                 UIImage(named: "Icon metro-air"),
-                 UIImage(named: "logoForest"),
-                 UIImage(named: "logoTrash"),
-                 UIImage(named: "logoNoise"),
-                 UIImage(named: "logoBuilding")]
+    let logos = [UIImage(named: "Icon-contact"),
+                 UIImage(named: "Icon-contact"),
+                 UIImage(named: "Icon-contact"),
+                 UIImage(named: "Icon-contact"),
+                 UIImage(named: "Icon-contact"),
+                 UIImage(named: "Icon-contact")]
     let data = ["Voda",
                 "Vazduh",
                 "Šume",
@@ -65,6 +65,7 @@ extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
+//       viewModel.numberOfRows()
         data.count
     }
     
@@ -82,6 +83,7 @@ extension CategoriesViewController: UITableViewDelegate, UITableViewDataSource {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryTableViewCell", for: indexPath) as? CategoryTableViewCell {
             cell.categoryItem.text = data[indexPath.section]
             cell.logoImage.image = logos[indexPath.section]
+//            cell.cellSetup(category: viewModel.categories[indexPath.section])
             return cell
         }
         return UITableViewCell()

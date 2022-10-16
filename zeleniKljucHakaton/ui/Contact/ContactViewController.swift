@@ -13,6 +13,8 @@ class ContactViewController: UIViewController {
     @IBOutlet weak var phoneNumberLabel: UILabel!
     @IBOutlet weak var emailLabel: UILabel!
     @IBOutlet weak var webAdressLabel: UILabel!
+    @IBOutlet weak var facebookLabel: UILabel!
+    @IBOutlet weak var instagramLabel: UILabel!
     
     init(viewModel: ContactViewDelegate) {
         self.viewModel = viewModel
@@ -35,6 +37,9 @@ class ContactViewController: UIViewController {
         phoneNumberLabel.text = "Broj telefona: \(contactInfo?.phoneNumber ?? "")"
         emailLabel.text = "Email: \(contactInfo?.email ?? "")"
         webAdressLabel.text = "Web: \(contactInfo?.webAdress ?? "")"
+        facebookLabel.text = "Facebook Profile: \(contactInfo?.facebookProfile ?? "")"
+        instagramLabel.text = "Instagram Profile: \(contactInfo?.instagramProfile ?? "")"
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

@@ -10,10 +10,16 @@ import UIKit
 class CategoryTableViewCell: UITableViewCell {
     static let identifier = "CategoryTableViewCell"
     @IBOutlet weak var categoryItem: UILabel!
-    @IBOutlet weak var logoImage: UIImageView!
+    @IBOutlet weak var logoImage: CachedImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    func cellSetup(category: CategoryModel) {
+        categoryItem.text = category.name
+        guard let logoURL = category.image else { return }
+        logoImage.loadImage(logoURL)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
