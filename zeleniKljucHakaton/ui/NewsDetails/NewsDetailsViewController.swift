@@ -23,6 +23,10 @@ class NewsDetailsViewController: UIViewController{
         fatalError("init(coder:) has not been implemented")
     }
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         newsDate.text = viewModel.news.date
