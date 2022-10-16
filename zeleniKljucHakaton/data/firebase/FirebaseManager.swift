@@ -21,7 +21,15 @@ final class FirebaseManager: ManagerProtocol {
     }
     
     func createProblemReport(problem: ProblemReportModel) {
-        //
+        do {
+            let data = try JSONEncoder().encode(problem)
+            let jsonData = try JSONSerialization.jsonObject(with: data)
+            databaseRef.child("Problems").setValue(jsonData) { (error, ref) in
+                print(ref)
+            }
+        } catch {
+            print(error)
+        }
     }
     
     func getAllNews() {

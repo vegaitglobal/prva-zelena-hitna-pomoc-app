@@ -9,11 +9,12 @@ import UIKit
 
 protocol ReportCoordinating: Coordinating {
     func presentImagePicker()
+    func showError(with message: String, title: String)
 }
 
-class ReportCoordinator {
+final class ReportCoordinator {
     private let presenter: UINavigationController
-    let manager: RepositoryModule
+    private let manager: RepositoryModule
     private var imagePicker: ImagePicker?
     
     init(presenter: UINavigationController,  manager: RepositoryModule) {
@@ -22,7 +23,7 @@ class ReportCoordinator {
     }
     
     func start() {
-        let reportViewDelegate = ReportViewModel(coordinator: self)
+        let reportViewDelegate = ReportViewModel(coordinator: self, manager: manager)
         let reportViewController = ReportViewController(viewModel: reportViewDelegate)
         presenter.pushViewController(reportViewController, animated: false)
         imagePicker = ImagePicker(presentationController: reportViewController,
@@ -44,11 +45,12 @@ class ReportCoordinator {
         let succesfulReportCoordinator = SuccessfulReportCoordinator(presenter: presenter)
         succesfulReportCoordinator.start()
     }
-
-    func continueToMaps() {
-//        let mapsCoordinator = MapsCoordinator(presenter: presenter)
-//        mapsCoordinator.continueToMapScheme()
+    
+    func showError(with message: String, title: String = "Greška") {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
+        alert.addAction(UIAlertAction(title: "Ok", style: UIAlertAction.Style.default, handler: {(action:UIAlertAction!) in
+            print("Action")
+        }))
+        presenter.present(alert, animated: true)
     }
 }
-
-

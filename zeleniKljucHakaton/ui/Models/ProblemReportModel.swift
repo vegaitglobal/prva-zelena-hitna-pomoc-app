@@ -6,7 +6,11 @@
 //
 
 import Foundation
-//zavrsiti
+
 struct ProblemReportModel: Codable {
+    let userName: String
+    let location: String
+    let category: String
     let description: String
+    let imagesURL: [String]
 }
