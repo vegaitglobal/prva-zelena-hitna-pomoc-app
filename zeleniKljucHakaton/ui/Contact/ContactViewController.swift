@@ -41,8 +41,8 @@ class ContactViewController: UIViewController {
         phoneNumberLabel.text = "Broj telefona: \(contactInfo?.phoneNumber ?? "")"
         emailLabel.text = "Email: \(contactInfo?.email ?? "")"
         webAdressLabel.text = "Web: \(contactInfo?.webAdress ?? "")"
-        facebookLabel.text = "Facebook Profile: \(contactInfo?.facebookProfile ?? "")"
-        instagramLabel.text = "Instagram Profile: \(contactInfo?.instagramProfile ?? "")"
+//        facebookLabel.text = "Facebook Profile: \(contactInfo?.facebookProfile ?? "")"
+//        instagramLabel.text = "Instagram Profile: \(contactInfo?.instagramProfile ?? "")"
         
     }
     
