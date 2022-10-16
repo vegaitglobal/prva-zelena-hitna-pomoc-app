@@ -28,14 +28,14 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIo-m3-hS2">
-                    <rect key="frame" x="25" y="103" width="364" height="61"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIo-m3-hS2">
+                    <rect key="frame" x="25" y="103" width="364" height="0.0"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <color key="textColor" red="0.23296272749999999" green="0.52554482219999998" blue="0.65403217079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="kG9-H9-ykN">
-                    <rect key="frame" x="25" y="194" width="364" height="643"/>
+                    <rect key="frame" x="25" y="118" width="364" height="719"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HCf-O1-Jf5" customClass="CachedImageView" customModule="zeleniKljucHakaton" customModuleProvider="target">
@@ -50,7 +50,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="kG9-H9-ykN" firstAttribute="top" secondItem="tIo-m3-hS2" secondAttribute="bottom" constant="30" id="2gI-8G-3RA"/>
+                <constraint firstItem="kG9-H9-ykN" firstAttribute="top" secondItem="tIo-m3-hS2" secondAttribute="bottom" constant="15" id="2gI-8G-3RA"/>
                 <constraint firstItem="tIo-m3-hS2" firstAttribute="top" secondItem="gqM-10-4T1" secondAttribute="bottom" constant="20" id="EJR-5b-ZXD"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kG9-H9-ykN" secondAttribute="trailing" constant="25" id="Hb9-xB-2zQ"/>
                 <constraint firstItem="gqM-10-4T1" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="ItL-nZ-hBH"/>
