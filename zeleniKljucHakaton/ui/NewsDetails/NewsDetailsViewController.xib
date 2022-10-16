@@ -40,7 +40,7 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZJY-po-gxx" customClass="CachedImageView" customModule="zeleniKljucHakaton" customModuleProvider="target">
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZJY-po-gxx" customClass="CachedImageView" customModule="zeleniKljucHakaton" customModuleProvider="target">
                                     <rect key="frame" x="25" y="82" width="364" height="260"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="260" id="ngf-cT-Q4U"/>

@@ -18,16 +18,16 @@ class PartnersCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         
         
-        let shadowpath = UIBezierPath(roundedRect: CGRect(x: 5, y: 3,
-                                                          width: (boxView.frame.width ), height: boxView.frame.height),
+        let shadowpath = UIBezierPath(roundedRect: CGRect(x: -70, y: 3,
+                                                          width: (boxView.frame.width - 40), height: boxView.frame.height),
                                       byRoundingCorners:[.topRight, .bottomRight], cornerRadii: CGSize(width: boxView.frame.width, height: 0.1))
 
         boxView.layer.shadowColor = UIColor.black.cgColor
-        boxView.layer.shadowOffset = CGSize(width: 0.1, height: 0.2)
+        boxView.layer.shadowOffset = CGSize(width: -2, height: 5)
         boxView.layer.shadowOpacity = 0.14
-        boxView.layer.shadowRadius = 3
+        boxView.layer.shadowRadius = 6
         boxView.layer.masksToBounds =  false
-        boxView.layer.shadowPath = shadowpath.cgPath
+        //boxView.layer.shadowPath = shadowpath.cgPath
     }
     
     func cellSetup(partnerModel: Partner) {

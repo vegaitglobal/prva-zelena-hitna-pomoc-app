@@ -17,22 +17,22 @@
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IjW-bS-uJW">
-                        <rect key="frame" x="90" y="15" width="369.5" height="96"/>
+                        <rect key="frame" x="90" y="15" width="350" height="96"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DzP-Jv-1RX">
-                                <rect key="frame" x="166" y="12" width="37.5" height="21"/>
+                                <rect key="frame" x="156.5" y="12" width="37.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ime partnera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VrT-JJ-Gyg">
-                                <rect key="frame" x="132.5" y="38" width="104.5" height="21"/>
+                                <rect key="frame" x="123" y="38" width="104.5" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KJi-tN-OWF">
-                                <rect key="frame" x="319.5" y="60" width="45" height="31"/>
+                                <rect key="frame" x="300" y="60" width="45" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="45" id="zVA-1Z-ji5"/>
                                 </constraints>
@@ -74,7 +74,7 @@
             <constraints>
                 <constraint firstItem="68e-SX-iqL" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="6Ji-lk-JxF"/>
                 <constraint firstItem="68e-SX-iqL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="BXD-JY-7oP"/>
-                <constraint firstAttribute="trailing" secondItem="IjW-bS-uJW" secondAttribute="trailing" constant="0.69999999999999996" id="FxS-BT-y5Z"/>
+                <constraint firstAttribute="trailing" secondItem="IjW-bS-uJW" secondAttribute="trailing" constant="20" id="FxS-BT-y5Z"/>
                 <constraint firstAttribute="bottom" secondItem="68e-SX-iqL" secondAttribute="bottom" constant="5" id="Igq-BU-RPc"/>
                 <constraint firstItem="IjW-bS-uJW" firstAttribute="leading" secondItem="68e-SX-iqL" secondAttribute="trailing" constant="-20" id="QIl-hb-dle"/>
                 <constraint firstItem="IjW-bS-uJW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="XBE-1h-nAg"/>
