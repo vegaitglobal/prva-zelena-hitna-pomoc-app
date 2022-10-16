@@ -11,7 +11,7 @@ struct ContactScreenModel: Codable {
     let description: String?
     let phoneNumber: String?
     let email: String?
-    let webAdress: String?
+    let webAddress: String?
     let instagramProfile: String?
     let facebookProfile: String?
 }

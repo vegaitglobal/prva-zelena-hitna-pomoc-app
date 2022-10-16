@@ -40,7 +40,7 @@ class ContactViewController: UIViewController {
         descriptionLabel.text = contactInfo?.description
         phoneNumberLabel.text = "Broj telefona: \(contactInfo?.phoneNumber ?? "")"
         emailLabel.text = "Email: \(contactInfo?.email ?? "")"
-        webAdressLabel.text = "Web: \(contactInfo?.webAdress ?? "")"
+        webAdressLabel.text = "Web: \(contactInfo?.webAddress ?? "")"
 //        facebookLabel.text = "Facebook Profile: \(contactInfo?.facebookProfile ?? "")"
 //        instagramLabel.text = "Instagram Profile: \(contactInfo?.instagramProfile ?? "")"
         
