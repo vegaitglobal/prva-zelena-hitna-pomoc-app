@@ -69,17 +69,14 @@ final class ReportViewController: UIViewController, ReportViewControllerDelegati
         viewModel.continueToCategories()
     }
     
-    @IBAction func chooseLocation(_ sender: Any) {
-        //        viewModel.continueToMaps()
-    }
-    
     @IBAction func reportProblem(_ sender: Any) {
         guard let name = nameTextField.text,
               let address = locationTextField.text,
+              let description = textView.text,
               !address.isEmpty,
-              !viewModel.selectedCategory.isEmpty,
-              !name.isEmpty else {
-            viewModel.showError(with: "Ime, opis i kategorija su obavezna polja.")
+              !description.isEmpty,
+              !viewModel.selectedCategory.isEmpty else {
+            viewModel.showError(with: "Opis i kategorija su obavezna polja.")
             return
         }
         
@@ -107,13 +104,6 @@ final class ReportViewController: UIViewController, ReportViewControllerDelegati
         if self.textView.textColor == UIColor.lightGray {
             self.textView.text = nil
             self.textView.textColor = UIColor.black
-        }
-    }
-    
-    func textViewDidEndEditing(_ textView: UITextView) {
-        if self.textView.text.isEmpty {
-            self.textView.text = "Opis"
-            self.textView.textColor = UIColor.lightGray
         }
     }
     

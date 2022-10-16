@@ -38,7 +38,6 @@ final class ReportViewModel: NSObject, ReportViewDelegate {
     }
     
     func submitReport(with model: ProblemReportModel) {
-        print(model)
         requestManager.createProblemReport(problem: model)
 //        coordinator?.continueToSuccesfulReport()
     }

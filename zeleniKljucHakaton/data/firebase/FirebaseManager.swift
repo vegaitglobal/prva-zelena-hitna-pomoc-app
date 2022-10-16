@@ -24,7 +24,7 @@ final class FirebaseManager: ManagerProtocol {
         do {
             let data = try JSONEncoder().encode(problem)
             let jsonData = try JSONSerialization.jsonObject(with: data)
-            databaseRef.child("Problems").setValue(jsonData) { (error, ref) in
+            databaseRef.child("Problems").child(UUID().uuidString).setValue(jsonData) { (error, ref) in
                 print(ref)
             }
         } catch {

@@ -32,7 +32,7 @@ class CategoriesViewController: UIViewController, CategoriesViewDelegating {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.title = "Kategorije"
+        navigationItem.title = "Izaberi kategoriju"
         navigationItem.largeTitleDisplayMode = .automatic
         viewModel.viewDelegate = self
         tableSetup()
