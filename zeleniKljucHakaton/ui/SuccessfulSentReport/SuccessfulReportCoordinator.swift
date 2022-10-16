@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SuccessfulReportCoordinator {
+class SuccessfulReportCoordinator: Coordinating {
     private let presenter: UINavigationController
     
     init(presenter: UINavigationController) {
@@ -18,6 +18,10 @@ class SuccessfulReportCoordinator {
         let successfulReportViewDelegate = SuccessfulReportViewModel(coordinator: self)
         let successfulReportViewController = SuccessfulReportViewController(viewModel: successfulReportViewDelegate)
         presenter.pushViewController(successfulReportViewController, animated: false)
+    }
+    
+    func stop() {
+        presenter.dismiss(animated: true)
     }
 }
 

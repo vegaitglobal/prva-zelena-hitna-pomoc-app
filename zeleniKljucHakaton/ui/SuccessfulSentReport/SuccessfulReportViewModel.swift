@@ -8,6 +8,7 @@
 import Foundation
 
 protocol SuccessfulReportViewDelegate {
+    func destroyView()
 }
 
 class SuccessfulReportViewModel: SuccessfulReportViewDelegate {
@@ -15,5 +16,9 @@ class SuccessfulReportViewModel: SuccessfulReportViewDelegate {
     
     init (coordinator: SuccessfulReportCoordinator) {
         self.coordinator = coordinator
+    }
+    
+    func destroyView() {
+        coordinator?.stop()
     }
 }

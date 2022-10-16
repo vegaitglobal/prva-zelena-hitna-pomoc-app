@@ -23,7 +23,10 @@ class SuccessfulReportViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         getTodaysDate()
-
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        viewModel.destroyView()
     }
     
     func getTodaysDate() {
