@@ -13,7 +13,7 @@ final class FirebaseManager: ManagerProtocol {
     private let databaseRef = Database.database().reference()
     
     func getAllCategories() {
-        databaseRef.child("Categories").observeSingleEvent(of: .value, with: { snapshot in
+        databaseRef.child("Categories").observe(.value, with: { snapshot in
             guard let data = try? JSONSerialization.data(withJSONObject: snapshot.value as Any, options: []) else { return }
             let categories = try? JSONDecoder().decode([CategoryModel].self, from: data)
             NotificationCenter.default.post(name: Notification.Name.categories, object: categories)
@@ -25,7 +25,7 @@ final class FirebaseManager: ManagerProtocol {
     }
     
     func getAllNews() {
-        databaseRef.child("News").observeSingleEvent(of: .value, with: { snapshot in
+        databaseRef.child("News").observe(.value, with: { snapshot in
             guard let data = try? JSONSerialization.data(withJSONObject: snapshot.value as Any, options: []) else { return }
             let news = try? JSONDecoder().decode([News].self, from: data)
             NotificationCenter.default.post(name: Notification.Name.news, object: news)
@@ -34,7 +34,7 @@ final class FirebaseManager: ManagerProtocol {
     
     
     func getPartnerDetails() {
-        databaseRef.child("Partners").observeSingleEvent(of: .value, with: { snapshot in
+        databaseRef.child("Partners").observe(.value, with: { snapshot in
             guard let data = try? JSONSerialization.data(withJSONObject: snapshot.value as Any, options: []) else { return }
             let partners = try? JSONDecoder().decode(PartnersScreenModel.self, from: data)
             NotificationCenter.default.post(name: Notification.Name.partners, object: partners)
@@ -42,7 +42,7 @@ final class FirebaseManager: ManagerProtocol {
     }
     
     func getDonationsData() {
-        databaseRef.child("Donations").observeSingleEvent(of: .value, with: { snapshot in
+        databaseRef.child("Donations").observe(.value, with: { snapshot in
             guard let data = try? JSONSerialization.data(withJSONObject: snapshot.value as Any, options: []) else { return }
             let donationsInfo = try? JSONDecoder().decode(DonationsScreenModel.self, from: data)
             NotificationCenter.default.post(name: Notification.Name.donations, object: donationsInfo)
@@ -50,7 +50,7 @@ final class FirebaseManager: ManagerProtocol {
     }
     
     func getContactInformations() {
-        databaseRef.child("Contact").observeSingleEvent(of: .value, with: { snapshot in
+        databaseRef.child("Contact").observe(.value, with: { snapshot in
             guard let data = try? JSONSerialization.data(withJSONObject: snapshot.value as Any, options: []) else { return }
             let contactInfo = try? JSONDecoder().decode(ContactScreenModel.self, from: data)
             NotificationCenter.default.post(name: Notification.Name.contact, object: contactInfo)
@@ -58,7 +58,7 @@ final class FirebaseManager: ManagerProtocol {
     }
     
     func getWaisteDisposalInformations() {
-        databaseRef.child("Waste Disposal").observeSingleEvent(of: .value, with: { snapshot in
+        databaseRef.child("Waste Disposal").observe(.value, with: { snapshot in
             guard let data = try? JSONSerialization.data(withJSONObject: snapshot.value as Any, options: []) else { return }
             let wasteDisposalInfo = try? JSONDecoder().decode(WasteDisposal.self, from: data)
             NotificationCenter.default.post(name: Notification.Name.waisteDisposal, object: wasteDisposalInfo)
