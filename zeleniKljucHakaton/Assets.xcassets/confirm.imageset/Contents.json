@@ -1,11 +1,11 @@
 {
   "images" : [
     {
-      "filename" : "conferm.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
+      "filename" : "conferm.png",
       "idiom" : "universal",
       "scale" : "2x"
     },

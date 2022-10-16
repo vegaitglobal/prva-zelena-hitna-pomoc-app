@@ -39,7 +39,7 @@ final class ReportViewModel: NSObject, ReportViewDelegate {
     
     func submitReport(with model: ProblemReportModel) {
         requestManager.createProblemReport(problem: model)
-//        coordinator?.continueToSuccesfulReport()
+        coordinator?.continueToSuccesfulReport()
     }
 
     func presentImagePicker() {

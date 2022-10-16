@@ -13,6 +13,8 @@ protocol ReportViewControllerDelegating: AnyObject {
 
 final class ReportViewController: UIViewController, ReportViewControllerDelegating, UITextViewDelegate, UITextFieldDelegate {
     @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak var galleryView: UIView!
+    
     let categoryNames = ["Voda", "Vazduh", "Šume", "Otpad", "Buka", "Gradnja", "Drugo"]
     @IBOutlet weak var textView: UITextView!
     @IBOutlet weak var checkbox: UIButton!
@@ -59,6 +61,11 @@ final class ReportViewController: UIViewController, ReportViewControllerDelegati
         locationTextField.delegate = self
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        let galleryCoordinator = GalleryCoordinator(presenter: navigationController!).createViewController()
+        addToview(to: galleryView, child: galleryCoordinator)
+//        let galleryViewModel = GalleryViewModel(coordinator: GalleryCoordinating)
+//        add(GalleryViewController(viewModel: galleryViewModel))
     }
     
     @IBAction func handleImageSelectTap(_ sender: Any) {

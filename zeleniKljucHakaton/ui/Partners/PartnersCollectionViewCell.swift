@@ -37,6 +37,8 @@ class PartnersCollectionViewCell: UICollectionViewCell {
         name.text = partnerModel.name
         guard let imageURL = partnerModel.logo else { return }
         partnerLogo.loadImage(imageURL)
+        partnerLogo.layer.borderColor = UIColor.black.withAlphaComponent(0.15).cgColor
+        partnerLogo.layer.borderWidth = 1
     }
 
     @IBAction func buttonPressed(_ sender: Any) {

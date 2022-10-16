@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="categoryButton" destination="WSz-Lr-8kK" id="vSX-pS-Sfo"/>
                 <outlet property="checkbox" destination="c3C-Sx-5oQ" id="7s8-ed-22f"/>
+                <outlet property="galleryView" destination="9R5-Te-Sto" id="j4g-ad-pmH"/>
                 <outlet property="locationTextField" destination="VUI-er-hWl" id="xKT-u5-c7d"/>
                 <outlet property="nameTextField" destination="iKU-xU-Fje" id="B4A-ML-7Vw"/>
                 <outlet property="scrollView" destination="6Hh-eM-bJr" id="aOX-AC-g3F"/>
@@ -26,16 +27,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Hh-eM-bJr">
-                    <rect key="frame" x="0.0" y="99.5" width="414" height="762.5"/>
+                    <rect key="frame" x="0.0" y="51.666666666666686" width="414" height="844.33333333333326"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Želim da prijavim anonimno" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8V-1q-t92">
-                            <rect key="frame" x="141.5" y="89" width="187.5" height="18"/>
+                            <rect key="frame" x="141.66666666666663" y="89" width="187.33333333333337" height="18"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <color key="textColor" systemColor="systemGray2Color"/>
                             <color key="highlightedColor" systemColor="systemGray3Color"/>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dodajte sliku" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzo-Nr-Zte">
-                            <rect key="frame" x="21" y="456" width="88.5" height="18"/>
+                            <rect key="frame" x="21.000000000000007" y="456" width="88.666666666666686" height="18"/>
                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                             <color key="textColor" systemColor="systemGray2Color"/>
                             <color key="highlightedColor" systemColor="systemGray3Color"/>
@@ -71,7 +72,7 @@
                             </userDefinedRuntimeAttributes>
                         </view>
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ime i prezime" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iKU-xU-Fje">
-                            <rect key="frame" x="21" y="20" width="373" height="50"/>
+                            <rect key="frame" x="21" y="20.000000000000007" width="373" height="49.999999999999993"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="dIq-BC-EEp"/>
                             </constraints>
@@ -103,7 +104,7 @@
                             <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no"/>
                         </textField>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrq-7X-2Fh">
-                            <rect key="frame" x="332" y="444" width="72" height="46"/>
+                            <rect key="frame" x="332" y="444" width="72" height="45"/>
                             <color key="tintColor" red="0.23296272749999999" green="0.52554482219999998" blue="0.65403217079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" image="camera.fill" catalog="system">
@@ -135,7 +136,7 @@
                             </connections>
                         </button>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mappin.and.ellipse" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="0jO-fW-1mE">
-                            <rect key="frame" x="344" y="128.5" width="50" height="35.5"/>
+                            <rect key="frame" x="344" y="129" width="50" height="35"/>
                             <color key="tintColor" red="0.23296272749999999" green="0.52554482219999998" blue="0.65403217079999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="50" id="wlq-t3-ZHu"/>
@@ -151,14 +152,14 @@
                             </connections>
                         </button>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9R5-Te-Sto">
-                            <rect key="frame" x="20" y="498" width="374" height="100"/>
+                            <rect key="frame" x="20" y="497" width="374" height="100"/>
                             <color key="backgroundColor" systemColor="systemRedColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="100" id="Kn6-Uj-DbK"/>
                             </constraints>
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nmb-yw-VwD">
-                            <rect key="frame" x="21" y="614" width="373" height="50"/>
+                            <rect key="frame" x="21" y="613" width="373" height="50"/>
                             <color key="backgroundColor" red="0.78643521250000004" green="0.86247830299999995" blue="0.27727047040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="2Yd-8o-aUR"/>
@@ -228,7 +229,7 @@
                     <viewLayoutGuide key="frameLayoutGuide" id="uaA-qK-PrH"/>
                 </scrollView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prijavi problem" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pfy-DJ-bpT">
-                    <rect key="frame" x="25" y="58" width="364" height="26.5"/>
+                    <rect key="frame" x="25" y="10" width="364" height="26.666666666666671"/>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>

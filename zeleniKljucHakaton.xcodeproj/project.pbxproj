@@ -9,6 +9,14 @@
 /* Begin PBXBuildFile section */
 		532844D028FAAAC5008695F3 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532844CF28FAAAC5008695F3 /* ImagePicker.swift */; };
 		532844D228FAAD6D008695F3 /* Coordinating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 532844D128FAAD6D008695F3 /* Coordinating.swift */; };
+		5329DF1928FC5D93001F3839 /* UIViewController+extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5329DF1828FC5D92001F3839 /* UIViewController+extensions.swift */; };
+		5329DF1B28FC60BE001F3839 /* UIView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5329DF1A28FC60BE001F3839 /* UIView+extension.swift */; };
+		53B4C9C728FC4D1400DB19EB /* GalleryCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B4C9C628FC4D1400DB19EB /* GalleryCoordinator.swift */; };
+		53B4C9CA28FC4D4400DB19EB /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B4C9C828FC4D4400DB19EB /* GalleryViewController.swift */; };
+		53B4C9CB28FC4D4400DB19EB /* GalleryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53B4C9C928FC4D4400DB19EB /* GalleryViewController.xib */; };
+		53B4C9CD28FC4D5600DB19EB /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B4C9CC28FC4D5600DB19EB /* GalleryViewModel.swift */; };
+		53B4C9D028FC535B00DB19EB /* GalleryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B4C9CE28FC535B00DB19EB /* GalleryCell.swift */; };
+		53B4C9D128FC535B00DB19EB /* GalleryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53B4C9CF28FC535B00DB19EB /* GalleryCell.xib */; };
 		664D5AB2328B7F200D3E3EF6 /* Pods_zeleniKljucHakaton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98C41C581C5ED718D7E80FB5 /* Pods_zeleniKljucHakaton.framework */; };
 		7C69832B28FAC3CB0037B44B /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C69832928FAC3CB0037B44B /* ContactViewController.swift */; };
 		7C69832C28FAC3CB0037B44B /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C69832A28FAC3CB0037B44B /* ContactViewController.xib */; };
@@ -123,6 +131,14 @@
 		0CC8CFB3DA4B25A7D10C4369 /* Pods-zeleniKljucHakaton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zeleniKljucHakaton.debug.xcconfig"; path = "Target Support Files/Pods-zeleniKljucHakaton/Pods-zeleniKljucHakaton.debug.xcconfig"; sourceTree = "<group>"; };
 		532844CF28FAAAC5008695F3 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		532844D128FAAD6D008695F3 /* Coordinating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinating.swift; sourceTree = "<group>"; };
+		5329DF1828FC5D92001F3839 /* UIViewController+extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+extensions.swift"; sourceTree = "<group>"; };
+		5329DF1A28FC60BE001F3839 /* UIView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+extension.swift"; sourceTree = "<group>"; };
+		53B4C9C628FC4D1400DB19EB /* GalleryCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCoordinator.swift; sourceTree = "<group>"; };
+		53B4C9C828FC4D4400DB19EB /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		53B4C9C928FC4D4400DB19EB /* GalleryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryViewController.xib; sourceTree = "<group>"; };
+		53B4C9CC28FC4D5600DB19EB /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		53B4C9CE28FC535B00DB19EB /* GalleryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCell.swift; sourceTree = "<group>"; };
+		53B4C9CF28FC535B00DB19EB /* GalleryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GalleryCell.xib; sourceTree = "<group>"; };
 		654DD142DA2F0D8E7E45A348 /* Pods-zeleniKljucHakaton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-zeleniKljucHakaton.release.xcconfig"; path = "Target Support Files/Pods-zeleniKljucHakaton/Pods-zeleniKljucHakaton.release.xcconfig"; sourceTree = "<group>"; };
 		7C69832928FAC3CB0037B44B /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		7C69832A28FAC3CB0037B44B /* ContactViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
@@ -255,10 +271,25 @@
 			path = "Image Picker";
 			sourceTree = "<group>";
 		};
+		53B4C9C528FC4BAC00DB19EB /* Gallery */ = {
+			isa = PBXGroup;
+			children = (
+				53B4C9C628FC4D1400DB19EB /* GalleryCoordinator.swift */,
+				53B4C9CC28FC4D5600DB19EB /* GalleryViewModel.swift */,
+				53B4C9C828FC4D4400DB19EB /* GalleryViewController.swift */,
+				53B4C9C928FC4D4400DB19EB /* GalleryViewController.xib */,
+				53B4C9CE28FC535B00DB19EB /* GalleryCell.swift */,
+				53B4C9CF28FC535B00DB19EB /* GalleryCell.xib */,
+			);
+			path = Gallery;
+			sourceTree = "<group>";
+		};
 		7C69832D28FAC4470037B44B /* extensions */ = {
 			isa = PBXGroup;
 			children = (
 				7C69832E28FAC4640037B44B /* NotificationName+extension.swift */,
+				5329DF1828FC5D92001F3839 /* UIViewController+extensions.swift */,
+				5329DF1A28FC60BE001F3839 /* UIView+extension.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -396,6 +427,7 @@
 		7C8896EF28F9F2FD0031E5FB /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				53B4C9C528FC4BAC00DB19EB /* Gallery */,
 				7C6983A128FBF98C0037B44B /* WasteDisposal */,
 				7C69838628FAF21C0037B44B /* CategoriesInformations */,
 				7C69837928FAEF440037B44B /* SuccessfulSentReport */,
@@ -708,9 +740,11 @@
 				7C69839228FAF3020037B44B /* CategoriesInformationsTableViewCell.xib in Resources */,
 				7C8896C428F9EECA0031E5FB /* Main.storyboard in Resources */,
 				7C6983B128FBFB4E0037B44B /* WasteDisposalTableViewCell.xib in Resources */,
+				53B4C9D128FC535B00DB19EB /* GalleryCell.xib in Resources */,
 				7C69833328FAC5290037B44B /* NewsViewController.xib in Resources */,
 				7C69836328FAE7770037B44B /* HomeCollectionViewCell.xib in Resources */,
 				7C69838A28FAF2770037B44B /* CategoriesInformationsViewController.xib in Resources */,
+				53B4C9CB28FC4D4400DB19EB /* GalleryViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -779,6 +813,7 @@
 			files = (
 				7C6983A728FBF9FA0037B44B /* WasteDisposalCoordinator.swift in Sources */,
 				7C69839628FAF6940037B44B /* NewsDetailsViewController.swift in Sources */,
+				5329DF1928FC5D93001F3839 /* UIViewController+extensions.swift in Sources */,
 				7C69838328FAEFC70037B44B /* SuccessfulReportCoordinator.swift in Sources */,
 				7C88974428FAA0840031E5FB /* CategoryModel.swift in Sources */,
 				7C88975028FAA0EA0031E5FB /* PartnersScreenModel.swift in Sources */,
@@ -786,8 +821,10 @@
 				7C88972628FA9AAA0031E5FB /* NewsPorotocol.swift in Sources */,
 				7C88972B28FA9B6E0031E5FB /* ProblemReportModel.swift in Sources */,
 				7C69837328FAED3D0037B44B /* CategoriesViewController.swift in Sources */,
+				53B4C9CD28FC4D5600DB19EB /* GalleryViewModel.swift in Sources */,
 				7C69839B28FAF6BD0037B44B /* NewsDetailsViewModel.swift in Sources */,
 				7C8896BD28F9EECA0031E5FB /* AppDelegate.swift in Sources */,
+				53B4C9D028FC535B00DB19EB /* GalleryCell.swift in Sources */,
 				7C88970B28F9FAE70031E5FB /* NewsViewModel.swift in Sources */,
 				7C6983A428FBF9E20037B44B /* WasteDisposalViewController.swift in Sources */,
 				532844D028FAAAC5008695F3 /* ImagePicker.swift in Sources */,
@@ -809,6 +846,7 @@
 				7C69833C28FAC6760037B44B /* PartnersCollectionViewCell.swift in Sources */,
 				7C69833628FAC5470037B44B /* NewsCollectionViewCell.swift in Sources */,
 				7C88970D28F9FB030031E5FB /* NewsCoordinator.swift in Sources */,
+				53B4C9C728FC4D1400DB19EB /* GalleryCoordinator.swift in Sources */,
 				7C69838C28FAF2880037B44B /* CategoriesInformationsCoordinator.swift in Sources */,
 				7C69839128FAF3020037B44B /* CategoriesInformationsTableViewCell.swift in Sources */,
 				7C69834B28FAD59F0037B44B /* ReportViewCoordinator.swift in Sources */,
@@ -833,11 +871,13 @@
 				7C88971C28FA9A330031E5FB /* RepositoryModuleProtocol.swift in Sources */,
 				7C69838E28FAF2960037B44B /* CategoriesInformationsViewModel.swift in Sources */,
 				7C88974828FAA0AD0031E5FB /* DonationsScreenModel.swift in Sources */,
+				53B4C9CA28FC4D4400DB19EB /* GalleryViewController.swift in Sources */,
 				7C6983AB28FBFA270037B44B /* WasteDisposal.swift in Sources */,
 				7C88971E28FA9A640031E5FB /* CategoriesProtocol.swift in Sources */,
 				7C88973928FA9F4E0031E5FB /* DonationsViewController.swift in Sources */,
 				7C88970028F9F6100031E5FB /* TabBarNavigationController.swift in Sources */,
 				7C88974028FA9F840031E5FB /* ContactCoordinator.swift in Sources */,
+				5329DF1B28FC60BE001F3839 /* UIView+extension.swift in Sources */,
 				7C88971328F9FC2F0031E5FB /* PartnersViewModel.swift in Sources */,
 				7C8896FE28F9F5E00031E5FB /* NavigationTab.swift in Sources */,
 				532844D228FAAD6D008695F3 /* Coordinating.swift in Sources */,
@@ -1025,6 +1065,7 @@
 				DEVELOPMENT_TEAM = 2H83FP8R92;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = zeleniKljucHakaton/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Zeleni Kljuc";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera to upload what you need to raport";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Do you allow this app to know your current location?";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Will you allow this app to always know your location?";
@@ -1062,6 +1103,7 @@
 				DEVELOPMENT_TEAM = 2H83FP8R92;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = zeleniKljucHakaton/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Zeleni Kljuc";
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need camera to upload what you need to raport";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Do you allow this app to know your current location?";
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Will you allow this app to always know your location?";
