@@ -11,6 +11,7 @@ class CategoryTableViewCell: UITableViewCell {
     static let identifier = "CategoryTableViewCell"
     @IBOutlet weak var categoryItem: UILabel!
     @IBOutlet weak var logoImage: CachedImageView!
+    @IBOutlet weak var backgorundView: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,5 +25,8 @@ class CategoryTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        if selected {
+            backgorundView.backgroundColor = UIColor(named: "customGray")
+        }
     }
 }
