@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,7 +22,16 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Sc-7e-TrP">
                                 <rect key="frame" x="1" y="1" width="349" height="73"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QEp-B1-l0e">
+                                <rect key="frame" x="2" y="2" width="347" height="71"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
                                         <integer key="value" value="10"/>
@@ -32,8 +42,12 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3Sc-7e-TrP" firstAttribute="top" secondItem="qMg-Ca-aPC" secondAttribute="top" constant="1" id="A9q-IZ-ulx"/>
+                            <constraint firstItem="QEp-B1-l0e" firstAttribute="leading" secondItem="qMg-Ca-aPC" secondAttribute="leading" constant="2" id="AKj-3A-iDb"/>
                             <constraint firstAttribute="trailing" secondItem="3Sc-7e-TrP" secondAttribute="trailing" constant="1" id="C6M-IY-dlk"/>
+                            <constraint firstItem="QEp-B1-l0e" firstAttribute="top" secondItem="qMg-Ca-aPC" secondAttribute="top" constant="2" id="LLJ-CO-03q"/>
                             <constraint firstItem="3Sc-7e-TrP" firstAttribute="leading" secondItem="qMg-Ca-aPC" secondAttribute="leading" constant="1" id="Rjw-jG-WYb"/>
+                            <constraint firstAttribute="bottom" secondItem="QEp-B1-l0e" secondAttribute="bottom" constant="2" id="Yk8-eo-jba"/>
+                            <constraint firstAttribute="trailing" secondItem="QEp-B1-l0e" secondAttribute="trailing" constant="2" id="td2-rz-BWu"/>
                             <constraint firstAttribute="bottom" secondItem="3Sc-7e-TrP" secondAttribute="bottom" constant="1" id="uUT-jH-uag"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
@@ -48,6 +62,11 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="70" id="JwT-dt-ZGg"/>
                         </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <integer key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rn2-lN-BCu">
                         <rect key="frame" x="95" y="5" width="41.5" height="65"/>
@@ -69,8 +88,18 @@
                     <constraint firstAttribute="trailing" secondItem="qMg-Ca-aPC" secondAttribute="trailing" id="i4s-cZ-nbT"/>
                     <constraint firstItem="rn2-lN-BCu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="xLm-Cb-2aU"/>
                 </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                        <integer key="value" value="10"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <integer key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
             <connections>
                 <outlet property="categoryItem" destination="rn2-lN-BCu" id="rlv-jE-wqF"/>
                 <outlet property="logoImage" destination="N9x-0c-6Ms" id="I10-sU-MTc"/>
@@ -78,4 +107,9 @@
             <point key="canvasLocation" x="154.34782608695653" y="106.13839285714285"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

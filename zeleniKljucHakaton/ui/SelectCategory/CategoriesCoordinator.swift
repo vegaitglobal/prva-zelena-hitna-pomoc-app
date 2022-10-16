@@ -17,7 +17,7 @@ class CategoriesCoordinator {
     }
     
     func start() {
-        let categoriesViewDelegate = CategoriesViewModel(coordinator: self)
+        let categoriesViewDelegate = CategoriesViewModel(coordinator: self, manager: manager)
         let categoriesViewController = CategoriesViewController(viewModel: categoriesViewDelegate)
         presenter.pushViewController(categoriesViewController, animated: false)
     }

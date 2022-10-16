@@ -90,7 +90,7 @@ extension ReportViewModel: CLLocationManagerDelegate {
         let userLocation: CLLocation = locations[0] as CLLocation
         let geocoder = CLGeocoder()
         geocoder.reverseGeocodeLocation(userLocation) { [weak self] (placemarks, error) in
-            guard let placemarks,
+            guard let placemarks = placemarks,
                   let self = self else { return }
             if (error != nil) {
                 print("error in reverseGeocode")
