@@ -30,7 +30,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bHi-xy-ogL" customClass="CachedImageView" customModule="zeleniKljucHakaton" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="53" width="357" height="174"/>
+                        <rect key="frame" x="0.0" y="53" width="357" height="210"/>
                         <color key="backgroundColor" systemColor="systemGray5Color"/>
                         <color key="tintColor" systemColor="systemGray4Color"/>
                         <userDefinedRuntimeAttributes>
@@ -39,24 +39,8 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </imageView>
-                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0wH-Uz-TT0">
-                        <rect key="frame" x="207" y="322" width="150" height="40"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="40" id="42l-ee-dDM"/>
-                            <constraint firstAttribute="width" constant="150" id="GHw-wZ-B3g"/>
-                        </constraints>
-                        <state key="normal" title="Button"/>
-                        <buttonConfiguration key="configuration" style="filled" title="Pročitaj više">
-                            <color key="baseBackgroundColor" red="0.78643521250000004" green="0.86247830299999995" blue="0.27727047040000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        </buttonConfiguration>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                <integer key="value" value="10"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NkR-Es-lyZ">
-                        <rect key="frame" x="0.0" y="235" width="357" height="79"/>
+                        <rect key="frame" x="0.0" y="271" width="357" height="79"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="79" id="ee7-DV-g6o"/>
                         </constraints>
@@ -72,15 +56,13 @@
                 <constraint firstItem="NkR-Es-lyZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="0Gq-dc-cLs"/>
                 <constraint firstItem="ywH-M0-gDP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="5oM-EG-FcO"/>
                 <constraint firstItem="n72-ya-LqZ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="7En-s7-6gI"/>
+                <constraint firstAttribute="bottom" secondItem="NkR-Es-lyZ" secondAttribute="bottom" constant="17" id="AJ8-l2-PZW"/>
                 <constraint firstAttribute="trailing" secondItem="NkR-Es-lyZ" secondAttribute="trailing" id="EWi-be-Tdu"/>
-                <constraint firstAttribute="trailing" secondItem="0wH-Uz-TT0" secondAttribute="trailing" id="Rqj-AZ-bEN"/>
                 <constraint firstItem="NkR-Es-lyZ" firstAttribute="top" secondItem="bHi-xy-ogL" secondAttribute="bottom" constant="8" id="Uxk-9I-s4c"/>
                 <constraint firstItem="bHi-xy-ogL" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Vy4-DX-m7F"/>
-                <constraint firstItem="0wH-Uz-TT0" firstAttribute="top" secondItem="NkR-Es-lyZ" secondAttribute="bottom" constant="8" id="WbU-ej-hFf"/>
                 <constraint firstItem="n72-ya-LqZ" firstAttribute="top" secondItem="ywH-M0-gDP" secondAttribute="bottom" constant="5" id="Y2H-xm-zrM"/>
                 <constraint firstAttribute="trailing" secondItem="n72-ya-LqZ" secondAttribute="trailing" id="fwn-yh-VJi"/>
                 <constraint firstItem="ywH-M0-gDP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iEb-nN-hSh"/>
-                <constraint firstAttribute="bottom" secondItem="0wH-Uz-TT0" secondAttribute="bottom" constant="5" id="lcL-GN-Ta7"/>
                 <constraint firstAttribute="trailing" secondItem="bHi-xy-ogL" secondAttribute="trailing" id="mza-tP-X08"/>
                 <constraint firstItem="bHi-xy-ogL" firstAttribute="top" secondItem="n72-ya-LqZ" secondAttribute="bottom" constant="8" id="oTp-w1-YLR"/>
                 <constraint firstAttribute="trailing" secondItem="ywH-M0-gDP" secondAttribute="trailing" id="ons-Ar-S3Y"/>
