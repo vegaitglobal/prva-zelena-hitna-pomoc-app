@@ -50,6 +50,7 @@ class CategoriesViewController: UIViewController, CategoriesViewDelegating {
         self.tableView.separatorColor = UIColor.clear
         tableView.delegate = self
         tableView.dataSource = self
+
     }
     @IBAction func didPressOkButton(_ sender: Any) {
         NotificationCenter.default.post(name: ReportViewController.myNotification, object: choosenCategory)

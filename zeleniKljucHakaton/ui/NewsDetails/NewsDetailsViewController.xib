@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -23,25 +23,25 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4h-YA-WFU">
-                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gAk-MQ-agS">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="968"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="943"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChW-9l-ESr">
-                                    <rect key="frame" x="25" y="8" width="364" height="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChW-9l-ESr">
+                                    <rect key="frame" x="25" y="0.0" width="364" height="0.0"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Naslov" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h4J-wW-VGj">
-                                    <rect key="frame" x="25" y="33" width="364" height="29"/>
+                                    <rect key="frame" x="25" y="8" width="364" height="29"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
-                                    <nil key="textColor"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZJY-po-gxx" customClass="CachedImageView" customModule="zeleniKljucHakaton" customModuleProvider="target">
-                                    <rect key="frame" x="25" y="79" width="364" height="260"/>
+                                    <rect key="frame" x="25" y="54" width="364" height="260"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="260" id="ngf-cT-Q4U"/>
                                     </constraints>
@@ -52,17 +52,17 @@
                                     </userDefinedRuntimeAttributes>
                                 </imageView>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9B-RR-UCS">
-                                    <rect key="frame" x="25" y="359" width="364" height="609"/>
-                                    <mutableString key="text">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</mutableString>
+                                    <rect key="frame" x="25" y="334" width="364" height="609"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <string key="text">Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.Lorem ipsum dolor sit amet, consec tetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor.</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <nil key="textColor"/>
-                                    <nil key="highlightedColor"/>
+                                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="trailing" secondItem="S9B-RR-UCS" secondAttribute="trailing" constant="25" id="20T-Iv-rEE"/>
-                                <constraint firstItem="ChW-9l-ESr" firstAttribute="top" secondItem="gAk-MQ-agS" secondAttribute="top" constant="8" id="43e-1k-uPn"/>
+                                <constraint firstItem="ChW-9l-ESr" firstAttribute="top" secondItem="gAk-MQ-agS" secondAttribute="top" id="43e-1k-uPn"/>
                                 <constraint firstItem="ZJY-po-gxx" firstAttribute="leading" secondItem="gAk-MQ-agS" secondAttribute="leading" constant="25" id="HH1-ri-XvC"/>
                                 <constraint firstItem="h4J-wW-VGj" firstAttribute="top" secondItem="ChW-9l-ESr" secondAttribute="bottom" constant="8" id="Ibo-Tr-1gP"/>
                                 <constraint firstItem="S9B-RR-UCS" firstAttribute="top" secondItem="ZJY-po-gxx" secondAttribute="bottom" constant="20" id="QbQ-fx-7wR"/>
@@ -77,30 +77,26 @@
                             </constraints>
                         </view>
                     </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="gAk-MQ-agS" firstAttribute="width" secondItem="h4h-YA-WFU" secondAttribute="width" id="4MI-5J-5hP"/>
-                        <constraint firstItem="gAk-MQ-agS" firstAttribute="height" secondItem="h4h-YA-WFU" secondAttribute="height" priority="250" id="6Gs-2U-IHm"/>
+                        <constraint firstItem="gAk-MQ-agS" firstAttribute="height" secondItem="h4h-YA-WFU" secondAttribute="height" priority="250" constant="47" id="6Gs-2U-IHm"/>
+                        <constraint firstItem="gAk-MQ-agS" firstAttribute="top" secondItem="h4h-YA-WFU" secondAttribute="top" id="DNI-lp-spj"/>
                         <constraint firstItem="gAk-MQ-agS" firstAttribute="leading" secondItem="h4h-YA-WFU" secondAttribute="leading" id="LkS-DZ-wqk"/>
-                        <constraint firstAttribute="bottom" secondItem="gAk-MQ-agS" secondAttribute="bottom" id="pht-dT-7ki"/>
+                        <constraint firstAttribute="bottom" secondItem="gAk-MQ-agS" secondAttribute="bottom" constant="-47" id="pht-dT-7ki"/>
                         <constraint firstAttribute="trailing" secondItem="gAk-MQ-agS" secondAttribute="trailing" id="pqy-jb-0Sr"/>
-                        <constraint firstItem="gAk-MQ-agS" firstAttribute="top" secondItem="h4h-YA-WFU" secondAttribute="top" id="xNE-cx-fza"/>
                     </constraints>
                 </scrollView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="h4h-YA-WFU" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="IlS-Xm-qwu"/>
                 <constraint firstItem="h4h-YA-WFU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="KUG-QC-520"/>
                 <constraint firstAttribute="bottom" secondItem="h4h-YA-WFU" secondAttribute="bottom" id="OhM-Mj-GY4"/>
-                <constraint firstItem="h4h-YA-WFU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="z9j-OQ-ixP"/>
+                <constraint firstItem="h4h-YA-WFU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="P1t-T0-csp"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="108.48214285714285"/>
         </view>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

@@ -4,7 +4,8 @@
 //
 //  Created by Teodora Randjelovic on 10/15/22.
 //
-
+import Foundation
+import CoreGraphics
 import UIKit
 
 protocol ReportViewControllerDelegating: AnyObject {
@@ -60,7 +61,9 @@ final class ReportViewController: UIViewController, ReportViewControllerDelegati
         textView.textColor = UIColor.lightGray
         scrollView.delegate = self
         nameTextField.delegate = self
+        nameTextField.attributedPlaceholder = .init(string: "Ime i prezime", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         locationTextField.delegate = self
+        locationTextField.attributedPlaceholder = .init(string: "Lokacija problema koji prijavljujete", attributes: [NSAttributedString.Key.foregroundColor: UIColor.lightGray])
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
         
